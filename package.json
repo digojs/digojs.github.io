@@ -11,6 +11,6 @@
 	"typedoc-default-themes": "git://github.com/digojs/typedoc-default-themes.git"
   },
   "scripts": {
-    "api": "typedoc ../digo --mode file --out api -p ../digo/tsconfig.json --excludeNotExported --excludePrivate --ignoreCompilerErrors --theme node_modules/typedoc-default-themes/bin/default --exclude **/node_modules --excludeExternals --exclude **/*Test.ts"
+    "api": "typedoc ../digo --mode file --out api -p ../digo/tsconfig.json --excludeNotExported --excludePrivate --ignoreCompilerErrors --theme node_modules/typedoc-default-themes/bin/default --exclude **/node_modules --excludeExternals --exclude **/test/**/*"
   }
 }
