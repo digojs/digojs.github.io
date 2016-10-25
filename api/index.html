@@ -85,6 +85,9 @@
 						<a href="classes/asyncqueue.html" class="tsd-kind-icon">Async<wbr>Queue</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/awaitable.html" class="tsd-kind-icon">Awaitable</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/bufferstream.html" class="tsd-kind-icon">Buffer<wbr>Stream</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -104,6 +107,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/matcher.html" class="tsd-kind-icon">Matcher</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/queue.html" class="tsd-kind-icon">Queue</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/sourcemapbuilder.html" class="tsd-kind-icon">Source<wbr>Map<wbr>Builder</a>
@@ -138,6 +144,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/mapping.html" class="tsd-kind-icon">Mapping</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/processor.html" class="tsd-kind-icon">Processor</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/sourcelocation.html" class="tsd-kind-icon">Source<wbr>Location</a>
 					</li>
@@ -160,7 +169,7 @@
 						<a href="globals.html#pattern" class="tsd-kind-icon">Pattern</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#processor" class="tsd-kind-icon">Processor</a>
+						<a href="globals.html#simpleprocessor" class="tsd-kind-icon">Simple<wbr>Processor</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#sourcemapdata" class="tsd-kind-icon">Source<wbr>Map<wbr>Data</a>
@@ -172,22 +181,25 @@
 						<a href="globals.html#stats" class="tsd-kind-icon">Stats</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="globals.html#asynccount" class="tsd-kind-icon">async<wbr>Count</a>
-					</li>
-					<li class=" tsd-kind-variable">
 						<a href="globals.html#asyncqueue" class="tsd-kind-icon">async<wbr>Queue</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#colors" class="tsd-kind-icon">colors</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="globals.html#currentdir" class="tsd-kind-icon">current<wbr>Dir</a>
+						<a href="globals.html#cwd" class="tsd-kind-icon">cwd</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#donetaskcount" class="tsd-kind-icon">done<wbr>Task<wbr>Count</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#encoding" class="tsd-kind-icon">encoding</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#errorcount" class="tsd-kind-icon">error<wbr>Count</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#evalsourcemap" class="tsd-kind-icon">eval<wbr>Source<wbr>Map</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#filecount" class="tsd-kind-icon">file<wbr>Count</a>
@@ -271,6 +283,9 @@
 						<a href="globals.html#starttime" class="tsd-kind-icon">start<wbr>Time</a>
 					</li>
 					<li class=" tsd-kind-variable">
+						<a href="globals.html#taskcount" class="tsd-kind-icon">task<wbr>Count</a>
+					</li>
+					<li class=" tsd-kind-variable">
 						<a href="globals.html#warningcount" class="tsd-kind-icon">warning<wbr>Count</a>
 					</li>
 					<li class=" tsd-kind-variable">
@@ -294,9 +309,6 @@
 					<li class=" tsd-kind-function">
 						<a href="globals.html#appendfilesync" class="tsd-kind-icon">append<wbr>File<wbr>Sync</a>
 					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter">
-						<a href="globals.html#async" class="tsd-kind-icon">async</a>
-					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#base64" class="tsd-kind-icon">base64</a>
 					</li>
@@ -304,7 +316,7 @@
 						<a href="globals.html#base64uri" class="tsd-kind-icon">base64<wbr>Uri</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#beginasync" class="tsd-kind-icon">begin<wbr>Async</a>
+						<a href="globals.html#begin" class="tsd-kind-icon">begin</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#buffertostring" class="tsd-kind-icon">buffer<wbr>ToString</a>
@@ -364,7 +376,7 @@
 						<a href="globals.html#emitsourcemapurl" class="tsd-kind-icon">emit<wbr>Source<wbr>Map<wbr>Url</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#endasync" class="tsd-kind-icon">end<wbr>Async</a>
+						<a href="globals.html#end" class="tsd-kind-icon">end</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#ensureparentdir" class="tsd-kind-icon">ensure<wbr>Parent<wbr>Dir</a>
@@ -409,7 +421,7 @@
 						<a href="globals.html#formatlog" class="tsd-kind-icon">format<wbr>Log</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#formatsource" class="tsd-kind-icon">format<wbr>Source</a>
+						<a href="globals.html#formatsourcecontent" class="tsd-kind-icon">format<wbr>Source<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#getchecksum" class="tsd-kind-icon">get<wbr>Checksum</a>
@@ -595,7 +607,7 @@
 						<a href="globals.html#extensions" class="tsd-kind-icon">extensions</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
-						<a href="globals.html#source" class="tsd-kind-icon">source</a>
+						<a href="globals.html#sourcecontent" class="tsd-kind-icon">source<wbr>Content</a>
 					</li>
 				</ul>
 			</nav>
@@ -621,29 +633,28 @@
 				<h2 id="-">文档</h2>
 				<ul>
 					<li><a href="https://github.com/digojs/digo/wiki/入门指南">入门指南</a></li>
+					<li><a href="https://github.com/digojs/digo/wiki/教程：如何使用%20digo%20构建前端项目">教程：如何使用 digo 构建前端项目</a></li>
 					<li><a href="https://github.com/digojs/digo-plugins#digo-插件列表">插件列表</a></li>
 					<li><a href="https://github.com/digojs/digo-digofiles#digo-digofiles">项目配置模板</a></li>
-					<li><a href="https://github.com/digojs/digo/wiki/产品比较">digo vs gulp &amp; webpack</a></li>
+					<li><a href="https://github.com/digojs/digo/wiki/工具比较">digo vs gulp &amp; webpack</a></li>
 					<li><a href="https://github.com/digojs/digo/wiki">更多文档</a></li>
 				</ul>
 				<h2 id="-digofile-js-"><code>digofile.js</code> 示例</h2>
 				<pre><code class="lang-js"><span class="hljs-keyword">var</span> digo = <span class="hljs-built_in">require</span>(<span class="hljs-string">"digo"</span>);
 
 exports.build = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    digo.src(<span class="hljs-string">"src/js/**/*.js"</span>).pipe(<span class="hljs-string">"digo-babel"</span>).dest(<span class="hljs-string">"_build/js"</span>);
-    digo.src(<span class="hljs-string">"src/css/**/*.less"</span>).pipe(<span class="hljs-string">"digo-less"</span>).pipe(<span class="hljs-string">"digo-autoprefixer"</span>).dest(<span class="hljs-string">"_build/css"</span>);
-    digo.src(<span class="hljs-string">"src/images/**/*"</span>).pipe(<span class="hljs-string">"digo-imagemin"</span>).dest(<span class="hljs-string">"_build/images"</span>);
-    digo.src(<span class="hljs-string">"src/**/*.html"</span>).pipe(<span class="hljs-string">"digo-include"</span>).dest(<span class="hljs-string">"_build"</span>);
+    <span class="hljs-keyword">var</span> list = digo.src(<span class="hljs-string">"src"</span>);
+    list.src(<span class="hljs-string">"*.js"</span>).pipe(<span class="hljs-string">"digo-babel"</span>);
+    list.src(<span class="hljs-string">"*.less"</span>).pipe(<span class="hljs-string">"digo-less"</span>).pipe(<span class="hljs-string">"digo-autoprefixer"</span>);
+    list.dest(<span class="hljs-string">"_build"</span>);
+    <span class="hljs-keyword">return</span> list;
 };
 
 exports.publish = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    exports.build();
-    digo.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-        digo.src(<span class="hljs-string">"_build/images/**/*"</span>).dest(<span class="hljs-string">"_dist/images"</span>);
-        digo.src(<span class="hljs-string">"_build/css/**/*.css"</span>).pipe(<span class="hljs-string">"digo-cleancss"</span>).dest(<span class="hljs-string">"_dist/css"</span>);
-        digo.src(<span class="hljs-string">"_build/js/**/*.js"</span>).pipe(<span class="hljs-string">"digo-uglify-js"</span>).dest(<span class="hljs-string">"_dist/js"</span>);
-        digo.src(<span class="hljs-string">"_build/**/*.html"</span>).pipe(<span class="hljs-string">"digo-html-minifier"</span>).dest(<span class="hljs-string">"_dist"</span>);
-    });
+    <span class="hljs-keyword">var</span> list = exports.build();
+    list.src(<span class="hljs-string">"*.js"</span>).pipe(<span class="hljs-string">"digo-uglify-js"</span>);
+    list.src(<span class="hljs-string">"*.css"</span>).pipe(<span class="hljs-string">"digo-clean-css"</span>);
+    list.dest(<span class="hljs-string">"_release"</span>);
 };
 
 exports.default = exports.watch = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
@@ -656,7 +667,7 @@ exports.default = exports.watch = <span class="hljs-function"><span class="hljs-
 				或者您还可以:</p>
 				<ul>
 					<li><a href="https://github.com/digo/digo/issues/new">报告 BUG</a></li>
-					<li><a href="https://github.com/digo/digo/issues/new">提交需求</a>。</li>
+					<li><a href="https://github.com/digo/digo/issues/new">提交需求</a></li>
 					<li><a href="https://github.com/digojs/digo/wiki/编写插件#共享你的插件">共享一个插件</a></li>
 					<li><a href="https://github.com/digojs/digo/wiki/贡献代码">贡献代码</a></li>
 				</ul>
