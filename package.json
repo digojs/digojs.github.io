@@ -1,5 +1,6 @@
 {
   "name": "digojs.github.io",
+  "private": true,
   "version": "0.0.1",
   "repository": "http://github.com/digojs/digojs.github.io",
   "description": "digojs.github.io",

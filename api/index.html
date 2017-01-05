@@ -70,6 +70,9 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
+						<a href="enums/buildmode.html" class="tsd-kind-icon">Build<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-enum">
 						<a href="enums/consolecolor.html" class="tsd-kind-icon">Console<wbr>Color</a>
 					</li>
 					<li class=" tsd-kind-enum">
@@ -78,14 +81,8 @@
 					<li class=" tsd-kind-enum">
 						<a href="enums/loglevel.html" class="tsd-kind-icon">Log<wbr>Level</a>
 					</li>
-					<li class=" tsd-kind-enum">
-						<a href="enums/workingmode.html" class="tsd-kind-icon">Working<wbr>Mode</a>
-					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/asyncqueue.html" class="tsd-kind-icon">Async<wbr>Queue</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/awaitable.html" class="tsd-kind-icon">Awaitable</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/bufferstream.html" class="tsd-kind-icon">Buffer<wbr>Stream</a>
@@ -112,6 +109,9 @@
 						<a href="classes/queue.html" class="tsd-kind-icon">Queue</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/rootfilelist.html" class="tsd-kind-icon">Root<wbr>File<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/sourcemapbuilder.html" class="tsd-kind-icon">Source<wbr>Map<wbr>Builder</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -130,7 +130,7 @@
 						<a href="interfaces/config.html" class="tsd-kind-icon">Config</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/fswatcheroptions.html" class="tsd-kind-icon">FSWatcher<wbr>Options</a>
+						<a href="interfaces/execoptions.html" class="tsd-kind-icon">Exec<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/globoptions.html" class="tsd-kind-icon">Glob<wbr>Options</a>
@@ -166,6 +166,9 @@
 						<a href="interfaces/writeroptions.html" class="tsd-kind-icon">Writer<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#asynccallback" class="tsd-kind-icon">Async<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#pattern" class="tsd-kind-icon">Pattern</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -182,6 +185,9 @@
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#asyncqueue" class="tsd-kind-icon">async<wbr>Queue</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#buildmode" class="tsd-kind-icon">build<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#colors" class="tsd-kind-icon">colors</a>
@@ -202,37 +208,22 @@
 						<a href="globals.html#evalsourcemap" class="tsd-kind-icon">eval<wbr>Source<wbr>Map</a>
 					</li>
 					<li class=" tsd-kind-variable">
+						<a href="globals.html#events" class="tsd-kind-icon">events</a>
+					</li>
+					<li class=" tsd-kind-variable">
 						<a href="globals.html#filecount" class="tsd-kind-icon">file<wbr>Count</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#fullpath" class="tsd-kind-icon">full<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-variable">
+						<a href="globals.html#globalmatcher" class="tsd-kind-icon">global<wbr>Matcher</a>
+					</li>
+					<li class=" tsd-kind-variable">
 						<a href="globals.html#loglevel" class="tsd-kind-icon">log<wbr>Level</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="globals.html#matcher" class="tsd-kind-icon">matcher</a>
-					</li>
-					<li class=" tsd-kind-variable">
 						<a href="globals.html#maxmessagelength" class="tsd-kind-icon">max<wbr>Message<wbr>Length</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#ondeletefile" class="tsd-kind-icon">on<wbr>Delete<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#onlog" class="tsd-kind-icon">on<wbr>Log</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#onlogfile" class="tsd-kind-icon">on<wbr>Log<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#onsavefile" class="tsd-kind-icon">on<wbr>Save<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#onvalidatefile" class="tsd-kind-icon">on<wbr>Validate<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#onvalidatesourcemap" class="tsd-kind-icon">on<wbr>Validate<wbr>Source<wbr>Map</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#overwrite" class="tsd-kind-icon">overwrite</a>
@@ -291,23 +282,20 @@
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#watcher" class="tsd-kind-icon">watcher</a>
 					</li>
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#workingmode" class="tsd-kind-icon">working<wbr>Mode</a>
-					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#addglobalpath" class="tsd-kind-icon">add<wbr>Global<wbr>Path</a>
+						<a href="globals.html#addcallback" class="tsd-kind-icon">add<wbr>Callback</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#addlogcolor" class="tsd-kind-icon">add<wbr>Log<wbr>Color</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#addrequirepath" class="tsd-kind-icon">add<wbr>Require<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#appendfile" class="tsd-kind-icon">append<wbr>File</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#appendfilename" class="tsd-kind-icon">append<wbr>File<wbr>Name</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#appendfilesync" class="tsd-kind-icon">append<wbr>File<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#base64" class="tsd-kind-icon">base64</a>
@@ -325,9 +313,6 @@
 						<a href="globals.html#cleandir" class="tsd-kind-icon">clean<wbr>Dir</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#cleandirsync" class="tsd-kind-icon">clean<wbr>Dir<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#commondir" class="tsd-kind-icon">common<wbr>Dir</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -337,40 +322,25 @@
 						<a href="globals.html#copydir" class="tsd-kind-icon">copy<wbr>Dir</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#copydirsync" class="tsd-kind-icon">copy<wbr>Dir<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#copyfile" class="tsd-kind-icon">copy<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#copyfilesync" class="tsd-kind-icon">copy<wbr>File<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#createdir" class="tsd-kind-icon">create<wbr>Dir</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#createdirsync" class="tsd-kind-icon">create<wbr>Dir<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#deletedir" class="tsd-kind-icon">delete<wbr>Dir</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#deletedirsync" class="tsd-kind-icon">delete<wbr>Dir<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#deletefile" class="tsd-kind-icon">delete<wbr>File</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#deletefilesync" class="tsd-kind-icon">delete<wbr>File<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#deleteparentdirifempty" class="tsd-kind-icon">delete<wbr>Parent<wbr>Dir<wbr>IfEmpty</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#deleteparentdirifemptysync" class="tsd-kind-icon">delete<wbr>Parent<wbr>Dir<wbr>IfEmpty<wbr>Sync</a>
+						<a href="globals.html#ellipsislog" class="tsd-kind-icon">ellipsis<wbr>Log</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#ellipsislog" class="tsd-kind-icon">ellipsis<wbr>Log</a>
+						<a href="globals.html#emit" class="tsd-kind-icon">emit</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#emitsourcemapurl" class="tsd-kind-icon">emit<wbr>Source<wbr>Map<wbr>Url</a>
@@ -382,28 +352,16 @@
 						<a href="globals.html#ensureparentdir" class="tsd-kind-icon">ensure<wbr>Parent<wbr>Dir</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#ensureparentdirsync" class="tsd-kind-icon">ensure<wbr>Parent<wbr>Dir<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#error" class="tsd-kind-icon">error</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#exec" class="tsd-kind-icon">exec</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#execsync" class="tsd-kind-icon">exec<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#existsdir" class="tsd-kind-icon">exists<wbr>Dir</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#existsdirsync" class="tsd-kind-icon">exists<wbr>Dir<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#existsfile" class="tsd-kind-icon">exists<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#existsfilesync" class="tsd-kind-icon">exists<wbr>File<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#fatal" class="tsd-kind-icon">fatal</a>
@@ -421,13 +379,10 @@
 						<a href="globals.html#formatlog" class="tsd-kind-icon">format<wbr>Log</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#formatsourcecontent" class="tsd-kind-icon">format<wbr>Source<wbr>Content</a>
+						<a href="globals.html#formatsource" class="tsd-kind-icon">format<wbr>Source</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#getchecksum" class="tsd-kind-icon">get<wbr>Checksum</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#getchecksumsync" class="tsd-kind-icon">get<wbr>Checksum<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#getdir" class="tsd-kind-icon">get<wbr>Dir</a>
@@ -445,19 +400,10 @@
 						<a href="globals.html#getfiles" class="tsd-kind-icon">get<wbr>Files</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#getfilessync" class="tsd-kind-icon">get<wbr>Files<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#getstat" class="tsd-kind-icon">get<wbr>Stat</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#getstatsync" class="tsd-kind-icon">get<wbr>Stat<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#glob" class="tsd-kind-icon">glob</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#globsync" class="tsd-kind-icon">glob<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#indir" class="tsd-kind-icon">in<wbr>Dir</a>
@@ -493,19 +439,43 @@
 						<a href="globals.html#movedir" class="tsd-kind-icon">move<wbr>Dir</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#movedirsync" class="tsd-kind-icon">move<wbr>Dir<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#movefile" class="tsd-kind-icon">move<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#movefilesync" class="tsd-kind-icon">move<wbr>File<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#normalizepath" class="tsd-kind-icon">normalize<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#normalizeurl" class="tsd-kind-icon">normalize<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#off" class="tsd-kind-icon">off</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#on" class="tsd-kind-icon">on</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#onfiledelete" class="tsd-kind-icon">on<wbr>File<wbr>Delete</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#onfiledep" class="tsd-kind-icon">on<wbr>File<wbr>Dep</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#onfilelog" class="tsd-kind-icon">on<wbr>File<wbr>Log</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#onfileref" class="tsd-kind-icon">on<wbr>File<wbr>Ref</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#onfilesave" class="tsd-kind-icon">on<wbr>File<wbr>Save</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#onfilevalidate" class="tsd-kind-icon">on<wbr>File<wbr>Validate</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#onlog" class="tsd-kind-icon">on<wbr>Log</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#onsourcemapvalidate" class="tsd-kind-icon">on<wbr>Source<wbr>Map<wbr>Validate</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#pathequals" class="tsd-kind-icon">path<wbr>Equals</a>
@@ -520,9 +490,6 @@
 						<a href="globals.html#readfile" class="tsd-kind-icon">read<wbr>File</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#readfilesync" class="tsd-kind-icon">read<wbr>File<wbr>Sync</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#relativepath" class="tsd-kind-icon">relative<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -533,6 +500,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#resolvepath" class="tsd-kind-icon">resolve<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolverequirepath" class="tsd-kind-icon">resolve<wbr>Require<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#resolveurl" class="tsd-kind-icon">resolve<wbr>Url</a>
@@ -577,16 +547,13 @@
 						<a href="globals.html#tosourcemapstring" class="tsd-kind-icon">to<wbr>Source<wbr>Map<wbr>String</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#updateprogressbar" class="tsd-kind-icon">update<wbr>Progress<wbr>Bar</a>
+						<a href="globals.html#updateprogress" class="tsd-kind-icon">update<wbr>Progress</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#verbose" class="tsd-kind-icon">verbose</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#walk" class="tsd-kind-icon">walk</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#walksync" class="tsd-kind-icon">walk<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#warning" class="tsd-kind-icon">warning</a>
@@ -597,9 +564,6 @@
 					<li class=" tsd-kind-function">
 						<a href="globals.html#writefile" class="tsd-kind-icon">write<wbr>File</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#writefilesync" class="tsd-kind-icon">write<wbr>File<wbr>Sync</a>
-					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#dict" class="tsd-kind-icon">dict</a>
 					</li>
@@ -607,7 +571,7 @@
 						<a href="globals.html#extensions" class="tsd-kind-icon">extensions</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
-						<a href="globals.html#sourcecontent" class="tsd-kind-icon">source<wbr>Content</a>
+						<a href="globals.html#logsource" class="tsd-kind-icon">log<wbr>Source</a>
 					</li>
 				</ul>
 			</nav>
@@ -615,29 +579,53 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="digo">digo</h1>
-				<p><a href="https://www.npmjs.com/package/digo"><img src="https://img.shields.io/npm/v/digo.svg" alt="NPM version"></a> <a href="https://www.npmjs.com/package/digo"><img src="https://img.shields.io/npm/dm/digo.svg" alt="Downloads"></a> <a href="https://travis-ci.org/digojs/digo"><img src="https://img.shields.io/travis/digojs/digo.svg" alt="Build Status"></a> <a href="https://coveralls.io/github/digojs/digo"><img src="https://img.shields.io/coveralls/digojs/digo/master.svg" alt="Coveralls Status"></a> <a href="https://gitter.im/digojs/digo"><img src="https://img.shields.io/badge/gitter-digo%2Fdigo-brightgreen.svg" alt="Gitter chat"></a></p>
-				<p>digo 是一个轻量、实用的流程化自动构建工具。</p>
-				<p>通过插件，digo 可以为项目提供代码预编译、模块依赖打包、压缩优化等自动构建功能。</p>
+				<p><a href="https://www.npmjs.com/package/digo"><img src="https://img.shields.io/npm/v/digo.svg" alt="NPM version"></a>
+					<a href="https://www.npmjs.com/package/digo"><img src="https://img.shields.io/npm/dm/digo.svg" alt="Downloads"></a>
+					<a href="https://travis-ci.org/digojs/digo"><img src="https://img.shields.io/travis/digojs/digo.svg" alt="Build Status"></a>
+					<a href="https://coveralls.io/github/digojs/digo"><img src="https://img.shields.io/coveralls/digojs/digo/master.svg" alt="Coveralls Status"></a>
+				<a href="https://gitter.im/digojs/digo"><img src="https://img.shields.io/badge/gitter-digo%2Fdigo-brightgreen.svg" alt="Gitter chat"></a></p>
+				<p>digo 是一个基于规则流程的自动化构建引擎。</p>
+				<p>通过插件，digo 可以为项目提供代码预编译、模块依赖打包、压缩优化等构建功能。</p>
 				<h2 id="-">特性</h2>
 				<ol>
-					<li><strong>轻量</strong>：您只需简单定义构建的流程，立即就能享受自动化发布的快感。</li>
-					<li><strong>高性能</strong>：得益于 <a href="https://nodejs.org/">Node.js</a> 的异步 IO 特性，digo 可以高效地构建项目。</li>
-					<li><strong>易上手</strong>: 只需三分钟看完<a href="https://github.com/digojs/digo/wiki/入门指南">入门指南</a>，马上就能实现预期的效果。</li>
-					<li><strong>易扩展</strong>: 使用<a href="https://github.com/digojs/digo-plugins#digo-插件列表">插件</a>，轻松满足不同的发布需求。</li>
+					<li><strong>易上手</strong>: 没有复杂的概念，您只需简单地定义一些构建的规则流程，立享自动化发布的快感。</li>
+					<li><strong>高性能</strong>: 得益于 <a href="https://nodejs.org/">Node.js</a> 的异步 IO 特性，digo 可以高效、并行地构建项目。</li>
+					<li><strong>易扩展</strong>: 使用<a href="https://github.com/digojs/plugins#digo-plugins">插件</a>，轻松满足不同的发布需求。</li>
 				</ol>
-				<h2 id="-">下载安装</h2>
-				<pre><code>$ npm <span class="hljs-keyword">install </span><span class="hljs-keyword">digo </span>-g
-</code></pre><blockquote>
-					<p>如果安装不成功，请<a href="https://github.com/digojs/digo/wiki/常见问题#安装失败">点击这里</a>。</p>
+				<h2 id="-">下载和安装</h2>
+				<pre><code class="lang-bash">$ npm install digo -g
+</code></pre>
+				<blockquote>
+					<p>如果安装失败，请<a href="https://github.com/digojs/digo/wiki/常见问题#安装失败">点击这里</a>。</p>
 				</blockquote>
-				<h2 id="-">文档</h2>
+				<h2 id="-">快速上手</h2>
+				<h3 id="1-digofile-js-">1. 在项目根目录下新建名为 <code>digofile.js</code> 的文件：</h3>
+				<pre><code class="lang-js"><span class="hljs-keyword">var</span> digo = <span class="hljs-built_in">require</span>(<span class="hljs-string">"digo"</span>);
+
+exports.hello = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    digo.src(<span class="hljs-string">"*.txt"</span>)
+        .pipe(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">file</span>) </span>{ 
+            file.content += <span class="hljs-string">"哈哈"</span>; 
+        })
+        .dest(<span class="hljs-string">"_out"</span>);
+};
+</code></pre>
+				<h3 id="3-digo-">3. 运行 digo:</h3>
+				<pre><code class="lang-bash">$ digo hello
+</code></pre>
+				<p>执行后项目内所有 <code>*.txt</code> 文件都会拷贝到 <code>_out</code> 目录，且末尾追加了“哈哈”。</p>
+				<blockquote>
+					<p>如果执行报错<a href="常见问题#安装失败">请点这里</a>。</p>
+				</blockquote>
+				<h2 id="-">更多资料</h2>
 				<ul>
-					<li><a href="https://github.com/digojs/digo/wiki/入门指南">入门指南</a></li>
-					<li><a href="https://github.com/digojs/digo/wiki/教程：如何使用%20digo%20构建前端项目">教程：如何使用 digo 构建前端项目</a></li>
-					<li><a href="https://github.com/digojs/digo-plugins#digo-插件列表">插件列表</a></li>
-					<li><a href="https://github.com/digojs/digo-digofiles#digo-digofiles">项目配置模板</a></li>
+					<li><a href="https://github.com/digojs/digo/wiki/如何使用%20digo%20构建前端%20Web%20项目">如何使用 digo 构建前端 Web 项目</a></li>
+					<li><a href="https://github.com/digojs/digo/wiki/如何使用%20digo%20构建%20Node%20项目">如何使用 digo 构建 Node 项目</a></li>
+					<li><a href="https://github.com/digojs/digofiles#digofiles">digofile.js 模板</a></li>
+					<li><a href="https://github.com/digojs/plugins#plugins">插件列表</a></li>
+					<li><a href="https://github.com/digojs/digo/wiki/API">API 文档</a>：<a href="https://github.com/digojs/digo/wiki/API#digosrcpatterns">digo.src</a>、<a href="https://github.com/digojs/digo/wiki/API#digowatchtask">digo.watch</a>、<a href="https://github.com/digojs/digo/wiki/API#digothencallbacks">digo.then</a>、<a href="https://digojs.github.com/api">完整 API 文档</a></li>
 					<li><a href="https://github.com/digojs/digo/wiki/工具比较">digo vs gulp &amp; webpack</a></li>
-					<li><a href="https://github.com/digojs/digo/wiki">更多文档</a></li>
+					<li><a href="https://github.com/digojs/digo/wiki">查看所有文档</a></li>
 				</ul>
 				<h2 id="-digofile-js-"><code>digofile.js</code> 示例</h2>
 				<pre><code class="lang-js"><span class="hljs-keyword">var</span> digo = <span class="hljs-built_in">require</span>(<span class="hljs-string">"digo"</span>);
@@ -657,9 +645,11 @@ exports.publish = <span class="hljs-function"><span class="hljs-keyword">functio
     list.dest(<span class="hljs-string">"_release"</span>);
 };
 
-exports.default = exports.watch = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+exports.watch = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     digo.watch(exports.build);
 };
+
+exports.default = exports.watch;
 </code></pre>
 				<h2 id="-">贡献代码</h2>
 				<p>社区支持始终是国内开源项目的硬伤。</p>

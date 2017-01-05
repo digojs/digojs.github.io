@@ -90,6 +90,9 @@
 								<a href="filecomparion.html#lastaccesstime" class="tsd-kind-icon">last<wbr>Access<wbr>Time</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="filecomparion.html#lastchangetime" class="tsd-kind-icon">last<wbr>Change<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="filecomparion.html#lastwritetime" class="tsd-kind-icon">last<wbr>Write<wbr>Time</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
@@ -127,6 +130,7 @@
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="filecomparion.html#data" class="tsd-kind-icon">data</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="filecomparion.html#default" class="tsd-kind-icon">default</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="filecomparion.html#lastaccesstime" class="tsd-kind-icon">last<wbr>Access<wbr>Time</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="filecomparion.html#lastchangetime" class="tsd-kind-icon">last<wbr>Change<wbr>Time</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="filecomparion.html#lastwritetime" class="tsd-kind-icon">last<wbr>Write<wbr>Time</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="filecomparion.html#md5" class="tsd-kind-icon">md5</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="filecomparion.html#sha1" class="tsd-kind-icon">sha1</a></li>
@@ -144,7 +148,7 @@
 					<div class="tsd-signature tsd-kind-icon">create<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1 &lt;&lt; 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/fsSync.ts#L472">lib/utility/fsSync.ts:472</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fs.ts#L1096">lib/utility/fs.ts:1096</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -159,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1 &lt;&lt; 12</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/fsSync.ts#L502">lib/utility/fsSync.ts:502</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fs.ts#L1131">lib/utility/fs.ts:1131</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;FileComparion.createTime | FileComparion.lastWriteTime | FileComparion.size</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/fsSync.ts#L507">lib/utility/fsSync.ts:507</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fs.ts#L1136">lib/utility/fs.ts:1136</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -189,7 +193,7 @@
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Access<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1 &lt;&lt; 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/fsSync.ts#L477">lib/utility/fsSync.ts:477</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fs.ts#L1101">lib/utility/fs.ts:1101</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -199,12 +203,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="lastchangetime" class="tsd-anchor"></a>
+					<h3>last<wbr>Change<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Change<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1 &lt;&lt; 3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fs.ts#L1111">lib/utility/fs.ts:1111</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>比较最后修改时间。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="lastwritetime" class="tsd-anchor"></a>
 					<h3>last<wbr>Write<wbr>Time</h3>
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Write<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1 &lt;&lt; 2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/fsSync.ts#L482">lib/utility/fsSync.ts:482</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fs.ts#L1106">lib/utility/fs.ts:1106</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -219,7 +238,7 @@
 					<div class="tsd-signature tsd-kind-icon">md5<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1 &lt;&lt; 11</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/fsSync.ts#L497">lib/utility/fsSync.ts:497</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fs.ts#L1126">lib/utility/fs.ts:1126</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -234,7 +253,7 @@
 					<div class="tsd-signature tsd-kind-icon">sha1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1 &lt;&lt; 10</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/fsSync.ts#L492">lib/utility/fsSync.ts:492</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fs.ts#L1121">lib/utility/fs.ts:1121</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -246,10 +265,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="size" class="tsd-anchor"></a>
 					<h3>size</h3>
-					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1 &lt;&lt; 3</span></div>
+					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1 &lt;&lt; 4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/fsSync.ts#L487">lib/utility/fsSync.ts:487</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fs.ts#L1116">lib/utility/fs.ts:1116</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

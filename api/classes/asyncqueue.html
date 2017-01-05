@@ -126,19 +126,38 @@
 					<div class="lead">
 						<p>表示一个异步队列。</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>desc</dt>
+						<dd><p>异步队列可以缓冲多个函数，让这些函数串行执行。
+							队列实现了加锁/解锁模型，加锁时，所以函数都会等待解锁后再执行。</p>
+						</dd>
+						<dt>example</dt>
+						<dd><p>var q = new AsyncQueue();
+								q.enquee(() =&gt; { });
+								q.enquee(done =&gt; { setTimeout(done, 1000); });
+								q.enquee(() =&gt; new Promise(resolve =&gt; setTimeout(resolve, 1000)));
+							q.enquee(() =&gt; { q.lock(); setTimeout(() =&gt; q.unlock(), 1000); });</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="queue.html" class="tsd-signature-type">Queue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">&gt;</span>
+						<a href="queue.html" class="tsd-signature-type">Queue</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#asynccallback" class="tsd-signature-type">AsyncCallback</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">AsyncQueue</span>
 							</li>
 						</ul>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#asynccallback" class="tsd-signature-type">AsyncCallback</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -187,12 +206,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/asyncQueue.ts#L10">lib/utility/asyncQueue.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/asyncQueue.ts#L26">lib/utility/asyncQueue.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>初始化新的队列。</p>
+									<p>初始化新的异步队列。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="asyncqueue.html" class="tsd-signature-type">AsyncQueue</a></h4>
@@ -213,7 +232,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="queue.html">Queue</a>.<a href="queue.html#empty">empty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/queue.ts#L19">lib/utility/queue.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/queue.ts#L19">lib/utility/queue.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -236,7 +255,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="queue.html">Queue</a>.<a href="queue.html#length">length</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/queue.ts#L26">lib/utility/queue.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/queue.ts#L29">lib/utility/queue.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -259,7 +278,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="queue.html">Queue</a>.<a href="queue.html#top">top</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/queue.ts#L61">lib/utility/queue.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/queue.ts#L24">lib/utility/queue.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -278,14 +297,14 @@
 					<a name="___iterator" class="tsd-anchor"></a>
 					<h3>__@iterator</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">__@iterator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">__@iterator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#asynccallback" class="tsd-signature-type">AsyncCallback</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="queue.html">Queue</a>.<a href="queue.html#___iterator">__@iterator</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/queue.ts#L40">lib/utility/queue.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/queue.ts#L43">lib/utility/queue.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -293,7 +312,7 @@
 									<p>获取当前队列的迭代器。</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#asynccallback" class="tsd-signature-type">AsyncCallback</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -308,18 +327,19 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="queue.html">Queue</a>.<a href="queue.html#dequeue">dequeue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/asyncQueue.ts#L65">lib/utility/asyncQueue.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/asyncQueue.ts#L75">lib/utility/asyncQueue.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>从当前队列顶部取出一项。</p>
+									<p>从当前队列顶部取出一个回调函数并执行。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">function</span></h4>
+							<p>返回取出的回调函数。如果队列为空或已锁定则返回 undefined。</p>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter-siganture">
-									<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+									<ul class="tsd-signatures tsd-kind-type-literal">
 										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>done<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 									</ul>
 									<ul class="tsd-descriptions">
@@ -330,7 +350,7 @@
 													<h5><span class="tsd-flag ts-flagOptional">Optional</span> done: <span class="tsd-signature-type">function</span></h5>
 													<ul class="tsd-parameters">
 														<li class="tsd-parameter-siganture">
-															<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+															<ul class="tsd-signatures tsd-kind-type-literal">
 																<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 															</ul>
 															<ul class="tsd-descriptions">
@@ -357,61 +377,28 @@
 					<a name="enqueue" class="tsd-anchor"></a>
 					<h3>enqueue</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">enqueue<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">enqueue<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><a href="../globals.html#asynccallback" class="tsd-signature-type">AsyncCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="queue.html">Queue</a>.<a href="queue.html#enqueue">enqueue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/asyncQueue.ts#L54">lib/utility/asyncQueue.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/asyncQueue.ts#L65">lib/utility/asyncQueue.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>在当前队列末尾添加一个异步任务。</p>
+									<p>在当前队列末尾添加一个回调函数。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>callback: <span class="tsd-signature-type">function</span></h5>
+									<h5>callback: <a href="../globals.html#asynccallback" class="tsd-signature-type">AsyncCallback</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>要添加的任务。</p>
+										<p>要添加的回调函数。</p>
 									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>done<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5><span class="tsd-flag ts-flagOptional">Optional</span> done: <span class="tsd-signature-type">function</span></h5>
-															<ul class="tsd-parameters">
-																<li class="tsd-parameter-siganture">
-																	<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-																		<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-																	</ul>
-																	<ul class="tsd-descriptions">
-																		<li class="tsd-description">
-																			<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-																		</li>
-																	</ul>
-																</li>
-															</ul>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span>
-														<span class="tsd-signature-symbol"> | </span>
-														<span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>
-													</h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -422,20 +409,29 @@
 					<a name="lock" class="tsd-anchor"></a>
 					<h3>lock</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">lock<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">lock<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/asyncQueue.ts#L28">lib/utility/asyncQueue.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/asyncQueue.ts#L45">lib/utility/asyncQueue.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>锁定当前队列直到解锁后才继续执行已添加的函数。</p>
+									<p>锁定当前队列。锁定后所有函数都将进入等待状态。</p>
 								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> message: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>指定锁定的来源以供调试。</p>
+									</div>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -450,16 +446,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/asyncQueue.ts#L44">lib/utility/asyncQueue.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/asyncQueue.ts#L99">lib/utility/asyncQueue.ts:99</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>创建和当前队列等价的确认对象。</p>
+									<p>创建和当前队列等价的确认对象(Promise)。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>返回一个确认对象。</p>
+							<p>返回一个确认对象(Promise)。</p>
 						</li>
 					</ul>
 				</section>
@@ -474,12 +470,12 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="queue.html">Queue</a>.<a href="queue.html#toarray">toArray</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/queue.ts#L109">lib/utility/queue.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/queue.ts#L98">lib/utility/queue.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取当前队列的等效数组。</p>
+									<p>获取当前队列的等价数组。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -497,12 +493,12 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="queue.html">Queue</a>.<a href="queue.html#tostring">toString</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/queue.ts#L123">lib/utility/queue.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/queue.ts#L112">lib/utility/queue.ts:112</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取当前队列的等效字符串。</p>
+									<p>获取当前队列的等价字符串。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -513,20 +509,29 @@
 					<a name="unlock" class="tsd-anchor"></a>
 					<h3>unlock</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">unlock<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">unlock<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/8272ed6/lib/utility/asyncQueue.ts#L35">lib/utility/asyncQueue.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/asyncQueue.ts#L54">lib/utility/asyncQueue.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>解锁当前队列以执行后续回调函数。</p>
+									<p>解锁当前队列。解锁后所有函数恢复执行。</p>
 								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> message: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>指定锁定的来源以供调试。</p>
+									</div>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
