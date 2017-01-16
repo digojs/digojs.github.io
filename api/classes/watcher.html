@@ -86,9 +86,6 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="watcher.html#rootlists" class="tsd-kind-icon">root<wbr>Lists</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="watcher.html#version" class="tsd-kind-icon">version</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="watcher.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
 							</li>
@@ -114,7 +111,7 @@
 								<a href="watcher.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="watcher.html#isignored" class="tsd-kind-icon">is<wbr>Ignored</a>
+								<a href="watcher.html#ignored" class="tsd-kind-icon">ignored</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="watcher.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
@@ -219,7 +216,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="watcher.html#delay" class="tsd-kind-icon">delay</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="watcher.html#rootlists" class="tsd-kind-icon">root<wbr>Lists</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="watcher.html#version" class="tsd-kind-icon">version</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="watcher.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
 						</section>
@@ -238,7 +234,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="watcher.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="watcher.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="watcher.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="watcher.html#isignored" class="tsd-kind-icon">is<wbr>Ignored</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="watcher.html#ignored" class="tsd-kind-icon">ignored</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="watcher.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="watcher.html#listeners" class="tsd-kind-icon">listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="watcher.html#on" class="tsd-kind-icon">on</a></li>
@@ -275,13 +271,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Watcher<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="watcher.html" class="tsd-signature-type">Watcher</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Watcher<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../globals.html#asynccallback" class="tsd-signature-type">AsyncCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="watcher.html" class="tsd-signature-type">Watcher</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/watch.ts#L190">lib/builder/watch.ts:190</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/watch.ts#L189">lib/builder/watch.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -292,24 +288,12 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>task: <span class="tsd-signature-type">function</span></h5>
+									<h5>task: <a href="../globals.html#asynccallback" class="tsd-signature-type">AsyncCallback</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>默认执行的任务名。</p>
 										</div>
 									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="watcher.html" class="tsd-signature-type">Watcher</a></h4>
@@ -326,7 +310,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#delay">delay</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fsWatcher.ts#L274">lib/utility/fsWatcher.ts:274</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/utility/fsWatcher.ts#L275">lib/utility/fsWatcher.ts:275</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -346,22 +330,12 @@
 					<div class="tsd-signature tsd-kind-icon">root<wbr>Lists<span class="tsd-signature-symbol">:</span> <a href="rootfilelist.html" class="tsd-signature-type">RootFileList</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/watch.ts#L190">lib/builder/watch.ts:190</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="version" class="tsd-anchor"></a>
-					<h3>version</h3>
-					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/watch.ts#L179">lib/builder/watch.ts:179</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/watch.ts#L189">lib/builder/watch.ts:189</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>获取当前生成的次数。</p>
+							<p>获取所有根节点列表。</p>
 						</div>
 					</div>
 				</section>
@@ -390,7 +364,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#iswatching">isWatching</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fsWatcher.ts#L176">lib/utility/fsWatcher.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/utility/fsWatcher.ts#L177">lib/utility/fsWatcher.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -416,7 +390,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#add">add</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fsWatcher.ts#L82">lib/utility/fsWatcher.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/utility/fsWatcher.ts#L82">lib/utility/fsWatcher.ts:82</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -440,14 +414,14 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ErrnoException</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ErrnoException</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>error: <span class="tsd-signature-type">ErrnoException</span></h5>
+															<h5>error: <span class="tsd-signature-type">ErrnoException</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 														</li>
 														<li>
 															<h5>path: <span class="tsd-signature-type">string</span></h5>
@@ -502,7 +476,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#close">close</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/watch.ts#L242">lib/builder/watch.ts:242</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/watch.ts#L253">lib/builder/watch.ts:253</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -605,17 +579,17 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="isignored" class="tsd-anchor"></a>
-					<h3>is<wbr>Ignored</h3>
+					<a name="ignored" class="tsd-anchor"></a>
+					<h3>ignored</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Ignored<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">ignored<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#isignored">isIgnored</a></p>
+								<p>Overwrites <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#ignored">ignored</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/watch.ts#L27">lib/builder/watch.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/watch.ts#L28">lib/builder/watch.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -725,7 +699,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#onchange">onChange</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/watch.ts#L65">lib/builder/watch.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/watch.ts#L70">lib/builder/watch.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -769,7 +743,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#oncreate">onCreate</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/watch.ts#L49">lib/builder/watch.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/watch.ts#L52">lib/builder/watch.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -807,7 +781,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#oncreatedir">onCreateDir</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fsWatcher.ts#L56">lib/utility/fsWatcher.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/utility/fsWatcher.ts#L56">lib/utility/fsWatcher.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -845,7 +819,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#ondelete">onDelete</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/watch.ts#L34">lib/builder/watch.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/watch.ts#L35">lib/builder/watch.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -883,7 +857,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#ondeletedir">onDeleteDir</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fsWatcher.ts#L42">lib/utility/fsWatcher.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/utility/fsWatcher.ts#L42">lib/utility/fsWatcher.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -921,7 +895,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#onerror">onError</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/watch.ts#L80">lib/builder/watch.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/watch.ts#L87">lib/builder/watch.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1040,7 +1014,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#remove">remove</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fsWatcher.ts#L132">lib/utility/fsWatcher.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/utility/fsWatcher.ts#L133">lib/utility/fsWatcher.ts:133</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1146,7 +1120,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/watch.ts#L227">lib/builder/watch.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/watch.ts#L236">lib/builder/watch.ts:236</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1206,7 +1180,7 @@
 								<p>Inherited from <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#on-1">on</a></p>
 								<p>Overwrites <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#on-1">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fsWatcher.ts#L523">lib/utility/fsWatcher.ts:523</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/utility/fsWatcher.ts#L525">lib/utility/fsWatcher.ts:525</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1257,7 +1231,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="fswatcher.html">FSWatcher</a>.<a href="fswatcher.html#watchoptions">watchOptions</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fsWatcher.ts#L221">lib/utility/fsWatcher.ts:221</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/utility/fsWatcher.ts#L222">lib/utility/fsWatcher.ts:222</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1271,7 +1245,7 @@
 						<div class="tsd-signature tsd-kind-icon">encoding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;buffer&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fsWatcher.ts#L236">lib/utility/fsWatcher.ts:236</a></li>
+								<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/utility/fsWatcher.ts#L237">lib/utility/fsWatcher.ts:237</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1286,7 +1260,7 @@
 						<div class="tsd-signature tsd-kind-icon">persistent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fsWatcher.ts#L226">lib/utility/fsWatcher.ts:226</a></li>
+								<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/utility/fsWatcher.ts#L227">lib/utility/fsWatcher.ts:227</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1301,7 +1275,7 @@
 						<div class="tsd-signature tsd-kind-icon">recursive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;parseFloat(process.version.slice(1)) &gt;&#x3D; 4.5 &amp;&amp; (process.platform &#x3D;&#x3D;&#x3D; &quot;win32&quot; || process.platform &#x3D;&#x3D;&#x3D; &quot;darwin&quot;)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/utility/fsWatcher.ts#L231">lib/utility/fsWatcher.ts:231</a></li>
+								<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/utility/fsWatcher.ts#L232">lib/utility/fsWatcher.ts:232</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">

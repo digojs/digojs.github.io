@@ -96,13 +96,16 @@
 								<a href="filelogentry.html#file" class="tsd-kind-icon">file</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="filelogentry.html#filename" class="tsd-kind-icon">file<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="filelogentry.html#message" class="tsd-kind-icon">message</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="filelogentry.html#path" class="tsd-kind-icon">path</a>
+								<a href="filelogentry.html#plugin" class="tsd-kind-icon">plugin</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="filelogentry.html#plugin" class="tsd-kind-icon">plugin</a>
+								<a href="filelogentry.html#showstack" class="tsd-kind-icon">show<wbr>Stack</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="filelogentry.html#source" class="tsd-kind-icon">source</a>
@@ -168,9 +171,10 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filelogentry.html#endline" class="tsd-kind-icon">end<wbr>Line</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filelogentry.html#error" class="tsd-kind-icon">error</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="filelogentry.html#file" class="tsd-kind-icon">file</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filelogentry.html#filename" class="tsd-kind-icon">file<wbr>Name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filelogentry.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filelogentry.html#path" class="tsd-kind-icon">path</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filelogentry.html#plugin" class="tsd-kind-icon">plugin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filelogentry.html#showstack" class="tsd-kind-icon">show<wbr>Stack</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filelogentry.html#source" class="tsd-kind-icon">source</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="filelogentry.html#sourcemap" class="tsd-kind-icon">source<wbr>Map</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="filelogentry.html#sourcemapdata" class="tsd-kind-icon">source<wbr>Map<wbr>Data</a></li>
@@ -193,14 +197,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>Log<wbr>Entry<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="file.html" class="tsd-signature-type">File</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol"> | </span><a href="logentry.html" class="tsd-signature-type">LogEntry</a>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filelogentry.html" class="tsd-signature-type">FileLogEntry</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>Log<wbr>Entry<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="file.html" class="tsd-signature-type">File</a>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol"> | </span><a href="logentry.html" class="tsd-signature-type">LogEntry</a>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filelogentry.html" class="tsd-signature-type">FileLogEntry</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="logentry.html">LogEntry</a>.<a href="logentry.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/file.ts#L1041">lib/builder/file.ts:1041</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/file.ts#L1081">lib/builder/file.ts:1081</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -219,7 +223,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>data: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol"> | </span><a href="logentry.html" class="tsd-signature-type">LogEntry</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol"> | </span><a href="logentry.html" class="tsd-signature-type">LogEntry</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>要处理的日志数据。</p>
@@ -249,7 +253,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#content">content</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/logging.ts#L147">lib/builder/logging.ts:147</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L152">lib/builder/logging.ts:152</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -265,7 +269,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#endcolumn">endColumn</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/logging.ts#L137">lib/builder/logging.ts:137</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L137">lib/builder/logging.ts:137</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -281,7 +285,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#endline">endLine</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/logging.ts#L132">lib/builder/logging.ts:132</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L132">lib/builder/logging.ts:132</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -293,11 +297,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="error" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> error</h3>
-					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Object</span></div>
+					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#error">error</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/logging.ts#L142">lib/builder/logging.ts:142</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L142">lib/builder/logging.ts:142</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -312,12 +316,28 @@
 					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <a href="file.html" class="tsd-signature-type">File</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/file.ts#L1031">lib/builder/file.ts:1031</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/file.ts#L1071">lib/builder/file.ts:1071</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>获取源文件对象。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="filename" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> file<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">file<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#filename">fileName</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L117">lib/builder/logging.ts:117</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>获取源文件名。</p>
 						</div>
 					</div>
 				</section>
@@ -328,28 +348,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#message">message</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/logging.ts#L112">lib/builder/logging.ts:112</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L112">lib/builder/logging.ts:112</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>获取日志信息。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="path" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> path</h3>
-					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#path">path</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/logging.ts#L117">lib/builder/logging.ts:117</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>获取源路径。</p>
 						</div>
 					</div>
 				</section>
@@ -360,12 +364,28 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#plugin">plugin</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/logging.ts#L107">lib/builder/logging.ts:107</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L107">lib/builder/logging.ts:107</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>获取所属的插件名。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="showstack" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> show<wbr>Stack</h3>
+					<div class="tsd-signature tsd-kind-icon">show<wbr>Stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#showstack">showStack</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L147">lib/builder/logging.ts:147</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>是否打印错误堆栈信息。</p>
 						</div>
 					</div>
 				</section>
@@ -376,7 +396,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#source">source</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/logging.ts#L152">lib/builder/logging.ts:152</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L157">lib/builder/logging.ts:157</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -391,7 +411,7 @@
 					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/file.ts#L1036">lib/builder/file.ts:1036</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/file.ts#L1076">lib/builder/file.ts:1076</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -406,7 +426,7 @@
 					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="../globals.html#sourcemapdata" class="tsd-signature-type">SourceMapData</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/file.ts#L1041">lib/builder/file.ts:1041</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/file.ts#L1081">lib/builder/file.ts:1081</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -422,7 +442,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#startcolumn">startColumn</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/logging.ts#L127">lib/builder/logging.ts:127</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L127">lib/builder/logging.ts:127</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -438,7 +458,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#startline">startLine</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/logging.ts#L122">lib/builder/logging.ts:122</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L122">lib/builder/logging.ts:122</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -452,7 +472,7 @@
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="tostring" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> to<wbr>String</h3>
+					<h3>to<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span>colors<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
@@ -461,7 +481,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="logentry.html">LogEntry</a>.<a href="logentry.html#tostring">toString</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/41a74e9/lib/builder/logging.ts#L183">lib/builder/logging.ts:183</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/logging.ts#L190">lib/builder/logging.ts:190</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

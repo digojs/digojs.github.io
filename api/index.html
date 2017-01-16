@@ -172,9 +172,6 @@
 						<a href="globals.html#pattern" class="tsd-kind-icon">Pattern</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#simpleprocessor" class="tsd-kind-icon">Simple<wbr>Processor</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#sourcemapdata" class="tsd-kind-icon">Source<wbr>Map<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -193,7 +190,7 @@
 						<a href="globals.html#colors" class="tsd-kind-icon">colors</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="globals.html#cwd" class="tsd-kind-icon">cwd</a>
+						<a href="globals.html#displayroot" class="tsd-kind-icon">display<wbr>Root</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#donetaskcount" class="tsd-kind-icon">done<wbr>Task<wbr>Count</a>
@@ -282,7 +279,7 @@
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#watcher" class="tsd-kind-icon">watcher</a>
 					</li>
-					<li class=" tsd-kind-function">
+					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="globals.html#addcallback" class="tsd-kind-icon">add<wbr>Callback</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -323,6 +320,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#copyfile" class="tsd-kind-icon">copy<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#copyfileif" class="tsd-kind-icon">copy<wbr>File<wbr>If</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#createdir" class="tsd-kind-icon">create<wbr>Dir</a>
@@ -424,13 +424,13 @@
 						<a href="globals.html#loaddigofile" class="tsd-kind-icon">load<wbr>Digo<wbr>File</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#loadignore" class="tsd-kind-icon">load<wbr>Ignore</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#locationtoindex" class="tsd-kind-icon">location<wbr>ToIndex</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#log" class="tsd-kind-icon">log</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#match" class="tsd-kind-icon">match</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#md5" class="tsd-kind-icon">md5</a>
@@ -478,6 +478,9 @@
 						<a href="globals.html#onsourcemapvalidate" class="tsd-kind-icon">on<wbr>Source<wbr>Map<wbr>Validate</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="globals.html#parseargs" class="tsd-kind-icon">parse<wbr>Args</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="globals.html#pathequals" class="tsd-kind-icon">path<wbr>Equals</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -487,7 +490,13 @@
 						<a href="globals.html#prependfilename" class="tsd-kind-icon">prepend<wbr>File<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="globals.html#question" class="tsd-kind-icon">question</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="globals.html#readfile" class="tsd-kind-icon">read<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#readfileif" class="tsd-kind-icon">read<wbr>File<wbr>If</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#relativepath" class="tsd-kind-icon">relative<wbr>Path</a>
@@ -519,7 +528,7 @@
 					<li class=" tsd-kind-function">
 						<a href="globals.html#setfilename" class="tsd-kind-icon">set<wbr>File<wbr>Name</a>
 					</li>
-					<li class=" tsd-kind-function">
+					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="globals.html#setproperty" class="tsd-kind-icon">set<wbr>Property</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -564,6 +573,9 @@
 					<li class=" tsd-kind-function">
 						<a href="globals.html#writefile" class="tsd-kind-icon">write<wbr>File</a>
 					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#writefileif" class="tsd-kind-icon">write<wbr>File<wbr>If</a>
+					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="globals.html#dict" class="tsd-kind-icon">dict</a>
 					</li>
@@ -585,18 +597,13 @@
 					<a href="https://coveralls.io/github/digojs/digo"><img src="https://img.shields.io/coveralls/digojs/digo/master.svg" alt="Coveralls Status"></a>
 				<a href="https://gitter.im/digojs/digo"><img src="https://img.shields.io/badge/gitter-digo%2Fdigo-brightgreen.svg" alt="Gitter chat"></a></p>
 				<p>digo 是一个基于规则流程的自动化构建引擎。</p>
+				<p>您只需简单地定义一些构建的规则流程，立享自动化发布的快感。</p>
 				<p>通过插件，digo 可以为项目提供代码预编译、模块依赖打包、压缩优化等构建功能。</p>
-				<h2 id="-">特性</h2>
-				<ol>
-					<li><strong>易上手</strong>: 没有复杂的概念，您只需简单地定义一些构建的规则流程，立享自动化发布的快感。</li>
-					<li><strong>高性能</strong>: 得益于 <a href="https://nodejs.org/">Node.js</a> 的异步 IO 特性，digo 可以高效、并行地构建项目。</li>
-					<li><strong>易扩展</strong>: 使用<a href="https://github.com/digojs/plugins#digo-plugins">插件</a>，轻松满足不同的发布需求。</li>
-				</ol>
 				<h2 id="-">下载和安装</h2>
 				<pre><code class="lang-bash">$ npm install digo -g
 </code></pre>
 				<blockquote>
-					<p>如果安装失败，请<a href="https://github.com/digojs/digo/wiki/常见问题#安装失败">点击这里</a>。</p>
+					<p>如果安装失败，请<a href="https://github.com/digojs/digo/wiki/常见问题#安装失败">参考这里</a>。</p>
 				</blockquote>
 				<h2 id="-">快速上手</h2>
 				<h3 id="1-digofile-js-">1. 在项目根目录下新建名为 <code>digofile.js</code> 的文件：</h3>
@@ -610,56 +617,31 @@ exports.hello = <span class="hljs-function"><span class="hljs-keyword">function<
         .dest(<span class="hljs-string">"_out"</span>);
 };
 </code></pre>
-				<h3 id="3-digo-">3. 运行 digo:</h3>
+				<h3 id="2-digo-">2. digo 一下:</h3>
 				<pre><code class="lang-bash">$ digo hello
 </code></pre>
 				<p>执行后项目内所有 <code>*.txt</code> 文件都会拷贝到 <code>_out</code> 目录，且末尾追加了“哈哈”。</p>
 				<blockquote>
-					<p>如果执行报错<a href="常见问题#安装失败">请点这里</a>。</p>
+					<p>如果执行报错<a href="https://github.com/digojs/digo/wiki/常见问题#执行失败">参考这里</a>。</p>
 				</blockquote>
 				<h2 id="-">更多资料</h2>
 				<ul>
-					<li><a href="https://github.com/digojs/digo/wiki/如何使用%20digo%20构建前端%20Web%20项目">如何使用 digo 构建前端 Web 项目</a></li>
-					<li><a href="https://github.com/digojs/digo/wiki/如何使用%20digo%20构建%20Node%20项目">如何使用 digo 构建 Node 项目</a></li>
-					<li><a href="https://github.com/digojs/digofiles#digofiles">digofile.js 模板</a></li>
-					<li><a href="https://github.com/digojs/plugins#plugins">插件列表</a></li>
+					<li><a href="https://github.com/digojs/digo/wiki/如何使用%20digo%20构建%20Web%20前端项目">如何：使用 digo 构建 Web 前端项目</a></li>
+					<li><a href="https://github.com/digojs/digo/wiki/如何使用%20digo%20构建%20Node%20+%2TypeScript%2项目">如何：使用 digo 构建 Node + TypeScript 项目</a></li>
+					<li><a href="https://github.com/digojs/digofiles#digofiles">digofile.js 通用模板下载</a></li>
+					<li><a href="https://github.com/digojs/plugins#plugins">搜索插件</a></li>
 					<li><a href="https://github.com/digojs/digo/wiki/API">API 文档</a>：<a href="https://github.com/digojs/digo/wiki/API#digosrcpatterns">digo.src</a>、<a href="https://github.com/digojs/digo/wiki/API#digowatchtask">digo.watch</a>、<a href="https://github.com/digojs/digo/wiki/API#digothencallbacks">digo.then</a>、<a href="https://digojs.github.com/api">完整 API 文档</a></li>
 					<li><a href="https://github.com/digojs/digo/wiki/工具比较">digo vs gulp &amp; webpack</a></li>
-					<li><a href="https://github.com/digojs/digo/wiki">查看所有文档</a></li>
+					<li><a href="https://github.com/digojs/digo/wiki">更多文档</a></li>
 				</ul>
-				<h2 id="-digofile-js-"><code>digofile.js</code> 示例</h2>
-				<pre><code class="lang-js"><span class="hljs-keyword">var</span> digo = <span class="hljs-built_in">require</span>(<span class="hljs-string">"digo"</span>);
-
-exports.build = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> list = digo.src(<span class="hljs-string">"src"</span>);
-    list.src(<span class="hljs-string">"*.js"</span>).pipe(<span class="hljs-string">"digo-babel"</span>);
-    list.src(<span class="hljs-string">"*.less"</span>).pipe(<span class="hljs-string">"digo-less"</span>).pipe(<span class="hljs-string">"digo-autoprefixer"</span>);
-    list.dest(<span class="hljs-string">"_build"</span>);
-    <span class="hljs-keyword">return</span> list;
-};
-
-exports.publish = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> list = exports.build();
-    list.src(<span class="hljs-string">"*.js"</span>).pipe(<span class="hljs-string">"digo-uglify-js"</span>);
-    list.src(<span class="hljs-string">"*.css"</span>).pipe(<span class="hljs-string">"digo-clean-css"</span>);
-    list.dest(<span class="hljs-string">"_release"</span>);
-};
-
-exports.watch = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    digo.watch(exports.build);
-};
-
-exports.default = exports.watch;
-</code></pre>
-				<h2 id="-">贡献代码</h2>
+				<h2 id="-">支持我们</h2>
 				<p>社区支持始终是国内开源项目的硬伤。</p>
-				<p>我们忠心地希望得到您的支持，如果您觉得这个项目不错，请点击右上角的关注。
-				或者您还可以:</p>
+				<p>我们忠心地希望得到您的支持，如果您觉得这个项目不错，请点击右上角的关注。</p>
+				<p>或者您还可以通过以下方式支持我们:</p>
 				<ul>
-					<li><a href="https://github.com/digo/digo/issues/new">报告 BUG</a></li>
 					<li><a href="https://github.com/digo/digo/issues/new">提交需求</a></li>
+					<li><a href="https://github.com/digo/digo/issues/new">报告 BUG</a></li>
 					<li><a href="https://github.com/digojs/digo/wiki/编写插件#共享你的插件">共享一个插件</a></li>
-					<li><a href="https://github.com/digojs/digo/wiki/贡献代码">贡献代码</a></li>
 				</ul>
 			</div>
 		</div>
