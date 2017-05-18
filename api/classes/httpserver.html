@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FSWatcher | digo</title>
+	<title>HttpServer | digo</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,10 +53,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="fswatcher.html">FSWatcher</a>
+					<a href="httpserver.html">HttpServer</a>
 				</li>
 			</ul>
-			<h1>Class FSWatcher</h1>
+			<h1>Class HttpServer</h1>
 		</div>
 	</div>
 </header>
@@ -75,94 +75,88 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="fswatcher.html" class="tsd-kind-icon">FSWatcher</a>
+						<a href="httpserver.html" class="tsd-kind-icon">Http<wbr>Server</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="fswatcher.html#delay" class="tsd-kind-icon">delay</a>
+								<a href="httpserver.html#virtualpath" class="tsd-kind-icon">virtual<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="fswatcher.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
+								<a href="httpserver.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="fswatcher.html#iswatching" class="tsd-kind-icon">is<wbr>Watching</a>
+								<a href="httpserver.html#connectioncount" class="tsd-kind-icon">connection<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="httpserver.html#islistening" class="tsd-kind-icon">is<wbr>Listening</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="httpserver.html#timeout" class="tsd-kind-icon">timeout</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="httpserver.html#url" class="tsd-kind-icon">url</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="httpserver.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="fswatcher.html#add" class="tsd-kind-icon">add</a>
+								<a href="httpserver.html#close" class="tsd-kind-icon">close</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+								<a href="httpserver.html#emit" class="tsd-kind-icon">emit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="httpserver.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="httpserver.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="fswatcher.html#close" class="tsd-kind-icon">close</a>
+								<a href="httpserver.html#listen" class="tsd-kind-icon">listen</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#emit" class="tsd-kind-icon">emit</a>
+								<a href="httpserver.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+								<a href="httpserver.html#listeners" class="tsd-kind-icon">listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="fswatcher.html#ignored" class="tsd-kind-icon">ignored</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#listeners" class="tsd-kind-icon">listeners</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#on" class="tsd-kind-icon">on</a>
+								<a href="httpserver.html#on" class="tsd-kind-icon">on</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="fswatcher.html#onchange" class="tsd-kind-icon">on<wbr>Change</a>
+								<a href="httpserver.html#onerror" class="tsd-kind-icon">on<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="fswatcher.html#oncreate" class="tsd-kind-icon">on<wbr>Create</a>
+								<a href="httpserver.html#onstart" class="tsd-kind-icon">on<wbr>Start</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="fswatcher.html#oncreatedir" class="tsd-kind-icon">on<wbr>Create<wbr>Dir</a>
+								<a href="httpserver.html#onstop" class="tsd-kind-icon">on<wbr>Stop</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="httpserver.html#once" class="tsd-kind-icon">once</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="httpserver.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="httpserver.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="fswatcher.html#ondelete" class="tsd-kind-icon">on<wbr>Delete</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="fswatcher.html#ondeletedir" class="tsd-kind-icon">on<wbr>Delete<wbr>Dir</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="fswatcher.html#onerror" class="tsd-kind-icon">on<wbr>Error</a>
+								<a href="httpserver.html#processrequest" class="tsd-kind-icon">process<wbr>Request</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#once" class="tsd-kind-icon">once</a>
+								<a href="httpserver.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+								<a href="httpserver.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="fswatcher.html#remove" class="tsd-kind-icon">remove</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="fswatcher.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+								<a href="httpserver.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="fswatcher.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
+								<a href="httpserver.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="fswatcher.html#on-1" class="tsd-kind-icon">on</a>
-							</li>
-							<li class=" tsd-kind-object-literal tsd-parent-kind-class">
-								<a href="fswatcher.html#watchoptions" class="tsd-kind-icon">watch<wbr>Options</a>
+								<a href="httpserver.html#on-1" class="tsd-kind-icon">on</a>
 							</li>
 						</ul>
 					</li>
@@ -175,17 +169,8 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>表示一个文件系统监听器。</p>
+						<p>表示一个 Http 服务器。</p>
 					</div>
-					<dl class="tsd-comment-tags">
-						<dt>example</dt>
-						<dd><p>var watcher = new FSWatcher();
-								watcher.on(&quot;change&quot;, function (path) { console.log(&quot;Changed&quot;, path) });
-								watcher.on(&quot;delete&quot;, function (path) { console.log(&quot;Deleted&quot;, path) });
-								watcher.on(&quot;create&quot;, function (path) { console.log(&quot;Created&quot;, path) });
-							watcher.add(&quot;.&quot;, function () { console.log(&quot;Start Watching...&quot;) });</p>
-						</dd>
-					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -195,10 +180,10 @@
 						<span class="tsd-signature-type">EventEmitter</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">FSWatcher</span>
+								<span class="target">HttpServer</span>
 								<ul class="tsd-hierarchy">
 									<li>
-										<a href="watcher.html" class="tsd-signature-type">Watcher</a>
+										<a href="server.html" class="tsd-signature-type">Server</a>
 									</li>
 								</ul>
 							</li>
@@ -213,50 +198,43 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fswatcher.html#delay" class="tsd-kind-icon">delay</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="fswatcher.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="httpserver.html#virtualpath" class="tsd-kind-icon">virtual<wbr>Path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="httpserver.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="fswatcher.html#iswatching" class="tsd-kind-icon">is<wbr>Watching</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="httpserver.html#connectioncount" class="tsd-kind-icon">connection<wbr>Count</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="httpserver.html#islistening" class="tsd-kind-icon">is<wbr>Listening</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="httpserver.html#timeout" class="tsd-kind-icon">timeout</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="httpserver.html#url" class="tsd-kind-icon">url</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fswatcher.html#add" class="tsd-kind-icon">add</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fswatcher.html#close" class="tsd-kind-icon">close</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#emit" class="tsd-kind-icon">emit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fswatcher.html#ignored" class="tsd-kind-icon">ignored</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#listeners" class="tsd-kind-icon">listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="fswatcher.html#onchange" class="tsd-kind-icon">on<wbr>Change</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="fswatcher.html#oncreate" class="tsd-kind-icon">on<wbr>Create</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="fswatcher.html#oncreatedir" class="tsd-kind-icon">on<wbr>Create<wbr>Dir</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="fswatcher.html#ondelete" class="tsd-kind-icon">on<wbr>Delete</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="fswatcher.html#ondeletedir" class="tsd-kind-icon">on<wbr>Delete<wbr>Dir</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="fswatcher.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#once" class="tsd-kind-icon">once</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fswatcher.html#remove" class="tsd-kind-icon">remove</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="fswatcher.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="fswatcher.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="fswatcher.html#on-1" class="tsd-kind-icon">on</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Object literals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-class"><a href="fswatcher.html#watchoptions" class="tsd-kind-icon">watch<wbr>Options</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="httpserver.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="httpserver.html#listen" class="tsd-kind-icon">listen</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="httpserver.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="httpserver.html#onstart" class="tsd-kind-icon">on<wbr>Start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="httpserver.html#onstop" class="tsd-kind-icon">on<wbr>Stop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="httpserver.html#processrequest" class="tsd-kind-icon">process<wbr>Request</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="httpserver.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="httpserver.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="httpserver.html#on-1" class="tsd-kind-icon">on</a></li>
 							</ul>
 						</section>
 					</div>
@@ -265,23 +243,18 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="delay" class="tsd-anchor"></a>
-					<h3>delay</h3>
-					<div class="tsd-signature tsd-kind-icon">delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;151</span></div>
+					<a name="virtualpath" class="tsd-anchor"></a>
+					<h3>virtual<wbr>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">virtual<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;/&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L271">lib/utility/fsWatcher.ts:271</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L45">lib/utility/httpServer.ts:45</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>监听延时回调的毫秒数。</p>
+							<p>当前服务器的虚拟路径。</p>
 						</div>
-						<dl class="tsd-comment-tags">
-							<dt>desc</dt>
-							<dd><p>设置一定的延时可以避免在短时间内重复处理相同的文件。</p>
-							</dd>
-						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
@@ -299,88 +272,116 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="iswatching" class="tsd-anchor"></a>
-					<h3>is<wbr>Watching</h3>
+					<a name="connectioncount" class="tsd-anchor"></a>
+					<h3>connection<wbr>Count</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isWatching<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> connectionCount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L173">lib/utility/fsWatcher.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L26">lib/utility/httpServer.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>判断当前监听器是否正在监听。</p>
+									<p>获取当前服务器的请求数。</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="islistening" class="tsd-anchor"></a>
+					<h3>is<wbr>Listening</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isListening<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L21">lib/utility/httpServer.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>判断当前服务器是否正在监听。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="add" class="tsd-anchor"></a>
-					<h3>add</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="timeout" class="tsd-anchor"></a>
+					<h3>timeout</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> timeout<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> timeout<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L78">lib/utility/fsWatcher.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L31">lib/utility/httpServer.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>添加要监听的文件或文件夹。</p>
+									<p>当前服务器的超时毫秒数。默认为 120000。</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L32">lib/utility/httpServer.ts:32</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>当前服务器的超时毫秒数。默认为 120000。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>要添加的文件或文件夹路径。</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>开始监听的回调函数。</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ErrnoException</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>error: <span class="tsd-signature-type">ErrnoException</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-														</li>
-														<li>
-															<h5>path: <span class="tsd-signature-type">string</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="url" class="tsd-anchor"></a>
+					<h3>url</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> url<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L37">lib/utility/httpServer.ts:37</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取当前服务器的主页地址。</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="addlistener" class="tsd-anchor"></a>
 					<h3>add<wbr>Listener</h3>
@@ -419,12 +420,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L151">lib/utility/fsWatcher.ts:151</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L93">lib/utility/httpServer.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>删除所有监听器。</p>
+									<p>关闭当前服务器。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -432,7 +433,7 @@
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">function</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>删除完成后的回调函数。</p>
+										<p>关闭的回调函数。</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
@@ -519,34 +520,51 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="ignored" class="tsd-anchor"></a>
-					<h3>ignored</h3>
+					<a name="listen" class="tsd-anchor"></a>
+					<h3>listen</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">ignored<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">listen<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L24">lib/utility/fsWatcher.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L83">lib/utility/httpServer.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>判断是否忽略指定的路径。</p>
+									<p>监听指定的地址。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;http://0.0.0.0:0/&quot;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>要判断的文件或文件夹绝对路径。</p>
+										<p>要监听的地址。</p>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>启动完成的回调函数。</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p>如果忽略指定的路径则返回 true，否则返回 false。</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -629,229 +647,76 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="onchange" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Change</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Change<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, stats<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Stats</span>, lastWriteTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L60">lib/utility/fsWatcher.ts:60</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>当监听到文件改变后执行。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>相关的文件绝对路径。</p>
-									</div>
-								</li>
-								<li>
-									<h5>stats: <span class="tsd-signature-type">Stats</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>相关的文件属性对象。</p>
-									</div>
-								</li>
-								<li>
-									<h5>lastWriteTime: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>最后修改时间。</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="oncreate" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Create</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Create<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, stats<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Stats</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L45">lib/utility/fsWatcher.ts:45</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>当监听到文件创建后执行。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>相关的文件绝对路径。</p>
-									</div>
-								</li>
-								<li>
-									<h5>stats: <span class="tsd-signature-type">Stats</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>文件属性对象。</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="oncreatedir" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Create<wbr>Dir</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Create<wbr>Dir<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, entries<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L52">lib/utility/fsWatcher.ts:52</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>当监听到文件夹创建后执行。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>相关的文件夹绝对路径。</p>
-									</div>
-								</li>
-								<li>
-									<h5>entries: <span class="tsd-signature-type">string[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>文件列表。</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="ondelete" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Delete</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Delete<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, lastWriteTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L31">lib/utility/fsWatcher.ts:31</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>当监听到文件删除后执行。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>相关的文件绝对路径。</p>
-									</div>
-								</li>
-								<li>
-									<h5>lastWriteTime: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>最后修改时间。</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="ondeletedir" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Delete<wbr>Dir</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Delete<wbr>Dir<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, lastEntries<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L38">lib/utility/fsWatcher.ts:38</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>当监听到文件夹删除后执行。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>相关的文件夹绝对路径。</p>
-									</div>
-								</li>
-								<li>
-									<h5>lastEntries: <span class="tsd-signature-type">string[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>最后文件列表。</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="onerror" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Error</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Error<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ErrnoException</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Error<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ErrnoException</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L67">lib/utility/fsWatcher.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L65">lib/utility/httpServer.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>当监听发生错误后执行。</p>
+									<p>当服务器错误时执行。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>error: <span class="tsd-signature-type">ErrnoException</span></h5>
+									<h5>e: <span class="tsd-signature-type">ErrnoException</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>相关的错误对象。</p>
-									</div>
-								</li>
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>相关的文件绝对路径。</p>
+										<p>当前发生的错误。</p>
 									</div>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="onstart" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Start<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L50">lib/utility/httpServer.ts:50</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>当服务器启动时回调。</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="onstop" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Stop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Stop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L57">lib/utility/httpServer.ts:57</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>当服务器停止时回调。</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -940,30 +805,36 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="remove" class="tsd-anchor"></a>
-					<h3>remove</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="processrequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> process<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">process<wbr>Request<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IncomingMessage</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerResponse</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L129">lib/utility/fsWatcher.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L74">lib/utility/httpServer.ts:74</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>删除指定路径的监听器。</p>
+									<p>当被子类重写时负责处理所有请求。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<h5>req: <span class="tsd-signature-type">IncomingMessage</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>要删除的文件或文件夹路径。</p>
+										<p>当前的请求对象。</p>
+									</div>
+								</li>
+								<li>
+									<h5>res: <span class="tsd-signature-type">ServerResponse</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>当前的响应对象。</p>
 									</div>
 								</li>
 							</ul>
@@ -1080,11 +951,9 @@
 					<a name="on-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> on</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"delete"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"deleteDir"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"create"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"createDir"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"change"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"start"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"stop"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"request"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"error"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
@@ -1092,18 +961,98 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L523">lib/utility/fsWatcher.ts:523</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L106">lib/utility/httpServer.ts:106</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>绑定一个文件删除事件。</p>
+									<p>绑定一个服务器启动事件。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <span class="tsd-signature-type">"delete"</span></h5>
+									<h5>event: <span class="tsd-signature-type">"start"</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>要绑定的事件名。</p>
+									</div>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>要绑定的事件监听器。</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L113">lib/utility/httpServer.ts:113</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>绑定一个服务器停止事件。</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">"stop"</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>要绑定的事件名。</p>
+									</div>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>要绑定的事件监听器。</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L122">lib/utility/httpServer.ts:122</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>绑定一个请求事件。</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">"request"</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>要绑定的事件名。</p>
 									</div>
@@ -1113,24 +1062,24 @@
 									<div class="tsd-comment tsd-typography">
 										<p>要绑定的事件监听器。</p>
 										<ul>
-											<li>@param path 相关的文件绝对路径。</li>
-											<li>@param lastWriteTime 最后修改时间。</li>
+											<li>@param req 当前的请求对象。</li>
+											<li>@param res 当前的响应对象。</li>
 										</ul>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, lastWriteTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IncomingMessage</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerResponse</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>path: <span class="tsd-signature-type">string</span></h5>
+															<h5>req: <span class="tsd-signature-type">IncomingMessage</span></h5>
 														</li>
 														<li>
-															<h5>lastWriteTime: <span class="tsd-signature-type">number</span></h5>
+															<h5>res: <span class="tsd-signature-type">ServerResponse</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1145,223 +1094,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L532">lib/utility/fsWatcher.ts:532</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>绑定一个文件夹删除事件。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>event: <span class="tsd-signature-type">"deleteDir"</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>要绑定的事件名。</p>
-									</div>
-								</li>
-								<li>
-									<h5>listener: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>要绑定的事件监听器。</p>
-										<ul>
-											<li>@param path 相关的文件夹绝对路径。</li>
-											<li>@param lastEntries 最后文件列表。</li>
-										</ul>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, lastEntries<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>path: <span class="tsd-signature-type">string</span></h5>
-														</li>
-														<li>
-															<h5>lastEntries: <span class="tsd-signature-type">string[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L541">lib/utility/fsWatcher.ts:541</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>绑定一个文件创建事件。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>event: <span class="tsd-signature-type">"create"</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>要绑定的事件名。</p>
-									</div>
-								</li>
-								<li>
-									<h5>listener: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>要绑定的事件监听器。</p>
-										<ul>
-											<li>@param path 相关的文件绝对路径。</li>
-											<li>@param stats 文件属性对象。</li>
-										</ul>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, stats<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Stats</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>path: <span class="tsd-signature-type">string</span></h5>
-														</li>
-														<li>
-															<h5>stats: <span class="tsd-signature-type">Stats</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L550">lib/utility/fsWatcher.ts:550</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>绑定一个文件夹删除事件。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>event: <span class="tsd-signature-type">"createDir"</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>要绑定的事件名。</p>
-									</div>
-								</li>
-								<li>
-									<h5>listener: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>要绑定的事件监听器。</p>
-										<ul>
-											<li>@param path 相关的文件夹绝对路径。</li>
-											<li>@param entries 文件列表。</li>
-										</ul>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, entries<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>path: <span class="tsd-signature-type">string</span></h5>
-														</li>
-														<li>
-															<h5>entries: <span class="tsd-signature-type">string[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L560">lib/utility/fsWatcher.ts:560</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>绑定一个文件改变事件。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>event: <span class="tsd-signature-type">"change"</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>要绑定的事件名。</p>
-									</div>
-								</li>
-								<li>
-									<h5>listener: <span class="tsd-signature-type">function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>要绑定的事件监听器。</p>
-										<ul>
-											<li>@param path 相关的文件绝对路径。</li>
-											<li>@param stats 相关的文件属性对象。</li>
-											<li>@param lastWriteTime 最后修改时间。</li>
-										</ul>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, stats<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Stats</span>, lastWriteTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>path: <span class="tsd-signature-type">string</span></h5>
-														</li>
-														<li>
-															<h5>stats: <span class="tsd-signature-type">Stats</span></h5>
-														</li>
-														<li>
-															<h5>lastWriteTime: <span class="tsd-signature-type">number</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L569">lib/utility/fsWatcher.ts:569</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L130">lib/utility/httpServer.ts:130</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1383,13 +1116,12 @@
 										<p>要绑定的事件监听器。</p>
 										<ul>
 											<li>@param error 相关的错误对象。</li>
-											<li>@param path 相关的文件绝对路径。</li>
 										</ul>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ErrnoException</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ErrnoException</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
@@ -1397,9 +1129,6 @@
 													<ul class="tsd-parameters">
 														<li>
 															<h5>error: <span class="tsd-signature-type">ErrnoException</span></h5>
-														</li>
-														<li>
-															<h5>path: <span class="tsd-signature-type">string</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1414,7 +1143,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L576">lib/utility/fsWatcher.ts:576</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/httpServer.ts#L137">lib/utility/httpServer.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1440,69 +1169,6 @@
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						</li>
 					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class">
-					<a name="watchoptions" class="tsd-anchor"></a>
-					<h3>watch<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">watch<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L218">lib/utility/fsWatcher.ts:218</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>获取传递给原生监听器的选项。</p>
-						</div>
-					</div>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="watchoptions.encoding" class="tsd-anchor"></a>
-						<h3>encoding</h3>
-						<div class="tsd-signature tsd-kind-icon">encoding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;buffer&quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L233">lib/utility/fsWatcher.ts:233</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>默认文件名编码。</p>
-							</div>
-						</div>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="watchoptions.persistent" class="tsd-anchor"></a>
-						<h3>persistent</h3>
-						<div class="tsd-signature tsd-kind-icon">persistent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L223">lib/utility/fsWatcher.ts:223</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>是否持久监听。如果设为 false 则在监听到一次改动后立即退出监听。</p>
-							</div>
-						</div>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="watchoptions.recursive" class="tsd-anchor"></a>
-						<h3>recursive</h3>
-						<div class="tsd-signature tsd-kind-icon">recursive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;parseFloat(process.version.slice(1)) &gt;&#x3D; 4.5 &amp;&amp; (process.platform &#x3D;&#x3D;&#x3D; &quot;win32&quot; || process.platform &#x3D;&#x3D;&#x3D; &quot;darwin&quot;)</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/utility/fsWatcher.ts#L228">lib/utility/fsWatcher.ts:228</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>是否使用原生的递归监听支持。</p>
-							</div>
-						</div>
-					</section>
 				</section>
 			</section>
 		</div>

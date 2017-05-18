@@ -111,10 +111,10 @@
 								<a href="config.html#loglevel" class="tsd-kind-icon">log<wbr>Level</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="config.html#logsource" class="tsd-kind-icon">log<wbr>Source</a>
+								<a href="config.html#logmaxlength" class="tsd-kind-icon">log<wbr>Max<wbr>Length</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="config.html#maxmessagelength" class="tsd-kind-icon">max<wbr>Message<wbr>Length</a>
+								<a href="config.html#logsource" class="tsd-kind-icon">log<wbr>Source</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="config.html#overwrite" class="tsd-kind-icon">overwrite</a>
@@ -202,8 +202,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="config.html#ignore" class="tsd-kind-icon">ignore</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="config.html#ignorefile" class="tsd-kind-icon">ignore<wbr>File</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="config.html#loglevel" class="tsd-kind-icon">log<wbr>Level</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="config.html#logmaxlength" class="tsd-kind-icon">log<wbr>Max<wbr>Length</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="config.html#logsource" class="tsd-kind-icon">log<wbr>Source</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="config.html#maxmessagelength" class="tsd-kind-icon">max<wbr>Message<wbr>Length</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="config.html#overwrite" class="tsd-kind-icon">overwrite</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="config.html#progress" class="tsd-kind-icon">progress</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="config.html#report" class="tsd-kind-icon">report</a></li>
@@ -232,7 +232,7 @@
 					<div class="tsd-signature tsd-kind-icon">build<wbr>Mode<span class="tsd-signature-symbol">:</span> <a href="../enums/buildmode.html" class="tsd-signature-type">BuildMode</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"build"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"clean"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"preview"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L76">lib/builder/config.ts:76</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L72">lib/builder/config.ts:72</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -247,7 +247,7 @@
 					<div class="tsd-signature tsd-kind-icon">colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L51">lib/builder/config.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L47">lib/builder/config.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -262,7 +262,7 @@
 					<div class="tsd-signature tsd-kind-icon">dict<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L61">lib/builder/config.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L57">lib/builder/config.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -282,10 +282,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="displayroot" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> display<wbr>Root</h3>
-					<div class="tsd-signature tsd-kind-icon">display<wbr>Root<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">display<wbr>Root<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L56">lib/builder/config.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L52">lib/builder/config.ts:52</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -297,15 +297,15 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="encoding" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> encoding</h3>
-					<div class="tsd-signature tsd-kind-icon">encoding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">encoding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L81">lib/builder/config.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L77">lib/builder/config.ts:77</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置读写文件使用的默认编码。</p>
+							<p>读写文件使用的默认编码。</p>
 						</div>
 					</div>
 				</section>
@@ -315,12 +315,12 @@
 					<div class="tsd-signature tsd-kind-icon">eval<wbr>Source<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L91">lib/builder/config.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L87">lib/builder/config.ts:87</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置是否允许生成器使用源映射进行定位。</p>
+							<p>是否允许生成器使用源映射进行定位。</p>
 						</div>
 					</div>
 				</section>
@@ -330,7 +330,7 @@
 					<div class="tsd-signature tsd-kind-icon">filter<span class="tsd-signature-symbol">:</span> <a href="../globals.html#pattern" class="tsd-signature-type">Pattern</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L147">lib/builder/config.ts:147</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L143">lib/builder/config.ts:143</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -345,7 +345,7 @@
 					<div class="tsd-signature tsd-kind-icon">full<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L36">lib/builder/config.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L32">lib/builder/config.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -360,7 +360,7 @@
 					<div class="tsd-signature tsd-kind-icon">ignore<span class="tsd-signature-symbol">:</span> <a href="../globals.html#pattern" class="tsd-signature-type">Pattern</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L152">lib/builder/config.ts:152</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L148">lib/builder/config.ts:148</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -375,7 +375,7 @@
 					<div class="tsd-signature tsd-kind-icon">ignore<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L157">lib/builder/config.ts:157</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L153">lib/builder/config.ts:153</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -387,10 +387,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="loglevel" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> log<wbr>Level</h3>
-					<div class="tsd-signature tsd-kind-icon">log<wbr>Level<span class="tsd-signature-symbol">:</span> <a href="../enums/loglevel.html" class="tsd-signature-type">LogLevel</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"verbose"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"log"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"info"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"success"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"failure"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"warning"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"error"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"fatal"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"slient"</span></div>
+					<div class="tsd-signature tsd-kind-icon">log<wbr>Level<span class="tsd-signature-symbol">:</span> <a href="../enums/loglevel.html" class="tsd-signature-type">LogLevel</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"verbose"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"log"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"info"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"warning"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"error"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"fatal"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"slient"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L31">lib/builder/config.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L27">lib/builder/config.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -400,27 +400,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="logsource" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> log<wbr>Source</h3>
-					<div class="tsd-signature tsd-kind-icon">log<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></div>
+					<a name="logmaxlength" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> log<wbr>Max<wbr>Length</h3>
+					<div class="tsd-signature tsd-kind-icon">log<wbr>Max<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L46">lib/builder/config.ts:46</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>在控制台显示源内容的格式。如果设为 null 则不显示源内容。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="maxmessagelength" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Message<wbr>Length</h3>
-					<div class="tsd-signature tsd-kind-icon">max<wbr>Message<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L41">lib/builder/config.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L37">lib/builder/config.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -430,12 +415,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="overwrite" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> overwrite</h3>
-					<div class="tsd-signature tsd-kind-icon">overwrite<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<a name="logsource" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> log<wbr>Source</h3>
+					<div class="tsd-signature tsd-kind-icon">log<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L71">lib/builder/config.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L42">lib/builder/config.ts:42</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>在控制台显示源内容的格式。如果设为 false 则不显示源内容。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="overwrite" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> overwrite</h3>
+					<div class="tsd-signature tsd-kind-icon">overwrite<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L67">lib/builder/config.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -450,7 +450,7 @@
 					<div class="tsd-signature tsd-kind-icon">progress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L66">lib/builder/config.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L62">lib/builder/config.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -465,7 +465,7 @@
 					<div class="tsd-signature tsd-kind-icon">report<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L162">lib/builder/config.ts:162</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L158">lib/builder/config.ts:158</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -480,7 +480,7 @@
 					<div class="tsd-signature tsd-kind-icon">silent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L26">lib/builder/config.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L22">lib/builder/config.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -492,90 +492,90 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="sourcemap" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source<wbr>Map</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L86">lib/builder/config.ts:86</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L82">lib/builder/config.ts:82</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置是否启用源映射。</p>
+							<p>是否启用源映射。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="sourcemapemit" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source<wbr>Map<wbr>Emit</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Emit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Emit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L122">lib/builder/config.ts:122</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L118">lib/builder/config.ts:118</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置是否在源文件追加对源映射的引用地址。</p>
+							<p>是否在源文件追加对源映射的引用地址。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="sourcemapincludefile" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source<wbr>Map<wbr>Include<wbr>File</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Include<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Include<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L137">lib/builder/config.ts:137</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L133">lib/builder/config.ts:133</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置是否在源映射插入 file 段。</p>
+							<p>是否在源映射插入 file 段。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="sourcemapincludenames" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source<wbr>Map<wbr>Include<wbr>Names</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Include<wbr>Names<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Include<wbr>Names<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L142">lib/builder/config.ts:142</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L138">lib/builder/config.ts:138</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置是否在源映射插入 names 段。</p>
+							<p>是否在源映射插入 names 段。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="sourcemapincludesourcescontent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source<wbr>Map<wbr>Include<wbr>Sources<wbr>Content</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Include<wbr>Sources<wbr>Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Include<wbr>Sources<wbr>Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L132">lib/builder/config.ts:132</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L128">lib/builder/config.ts:128</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置是否在源映射插入 sourcesContent 段。</p>
+							<p>是否在源映射插入 sourcesContent 段。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="sourcemapinline" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source<wbr>Map<wbr>Inline</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Inline<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Inline<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L117">lib/builder/config.ts:117</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L113">lib/builder/config.ts:113</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置是否在源文件中内联源映射。</p>
+							<p>是否在源文件中内联源映射。</p>
 						</div>
 					</div>
 				</section>
@@ -585,12 +585,12 @@
 					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L98">lib/builder/config.ts:98</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L94">lib/builder/config.ts:94</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置用于获取每个文件的源映射路径的回调函数。
+							<p>用于获取每个文件的源映射路径的回调函数。
 							字符串中 <code>{name}</code> 代表源文件名。</p>
 						</div>
 						<dl class="tsd-comment-tags">
@@ -603,15 +603,15 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="sourcemaproot" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source<wbr>Map<wbr>Root</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Root<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Root<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L127">lib/builder/config.ts:127</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L123">lib/builder/config.ts:123</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置源映射中引用源的跟地址。</p>
+							<p>源映射中引用源的跟地址。</p>
 						</div>
 					</div>
 				</section>
@@ -621,12 +621,12 @@
 					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L112">lib/builder/config.ts:112</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L108">lib/builder/config.ts:108</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置用于获取每个源映射中指定源文件地址的回调函数。</p>
+							<p>用于获取每个源映射中指定源文件地址的回调函数。</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>param</dt>
@@ -668,12 +668,12 @@
 					<div class="tsd-signature tsd-kind-icon">source<wbr>Map<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L105">lib/builder/config.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L101">lib/builder/config.ts:101</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置用于获取每个文件的源映射地址的回调函数。
+							<p>用于获取每个文件的源映射地址的回调函数。
 							字符串中 <code>{name}</code> 代表源文件名。</p>
 						</div>
 						<dl class="tsd-comment-tags">
@@ -689,7 +689,7 @@
 					<div class="tsd-signature tsd-kind-icon">verbose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/config.ts#L21">lib/builder/config.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/config.ts#L17">lib/builder/config.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

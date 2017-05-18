@@ -87,10 +87,10 @@
 								<a href="writer.html#file" class="tsd-kind-icon">file</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="writer.html#indentchar" class="tsd-kind-icon">indent<wbr>Char</a>
+								<a href="writer.html#indentstring" class="tsd-kind-icon">indent<wbr>String</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="writer.html#indentstring" class="tsd-kind-icon">indent<wbr>String</a>
+								<a href="writer.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="writer.html#end" class="tsd-kind-icon">end</a>
@@ -153,8 +153,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="writer.html#content" class="tsd-kind-icon">content</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="writer.html#file" class="tsd-kind-icon">file</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="writer.html#indentchar" class="tsd-kind-icon">indent<wbr>Char</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="writer.html#indentstring" class="tsd-kind-icon">indent<wbr>String</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="writer.html#options" class="tsd-kind-icon">options</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -183,7 +183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/writer.ts#L19">lib/builder/writer.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/writer.ts#L9">lib/builder/writer.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -202,10 +202,10 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/writeroptions.html" class="tsd-signature-type">WriterOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/writeroptions.html" class="tsd-signature-type">WriterOptions</a><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>写入的选项。</p>
+											<p>写入器的选项。</p>
 										</div>
 									</div>
 								</li>
@@ -223,12 +223,12 @@
 					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/writer.ts#L62">lib/builder/writer.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/writer.ts#L40">lib/builder/writer.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>获取最终生成的文本内容。</p>
+							<p>已写入的文本内容。</p>
 						</div>
 					</div>
 				</section>
@@ -238,27 +238,12 @@
 					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <a href="file.html" class="tsd-signature-type">File</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/writer.ts#L19">lib/builder/writer.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/writer.ts#L16">lib/builder/writer.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>获取当前写入的目标文件。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="indentchar" class="tsd-anchor"></a>
-					<h3>indent<wbr>Char</h3>
-					<div class="tsd-signature tsd-kind-icon">indent<wbr>Char<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;	&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/writer.ts#L43">lib/builder/writer.ts:43</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>获取或设置当前使用的缩进字符。</p>
+							<p>写入的目标文件。</p>
 						</div>
 					</div>
 				</section>
@@ -268,12 +253,27 @@
 					<div class="tsd-signature tsd-kind-icon">indent<wbr>String<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/writer.ts#L38">lib/builder/writer.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/writer.ts#L25">lib/builder/writer.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>获取或设置当前使用的缩进字符串。</p>
+							<p>当前使用的缩进字符串。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="options" class="tsd-anchor"></a>
+					<h3>options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/writeroptions.html" class="tsd-signature-type">WriterOptions</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/writer.ts#L16">lib/builder/writer.ts:16</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>写入器的选项。</p>
 						</div>
 					</div>
 				</section>
@@ -290,7 +290,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/writer.ts#L105">lib/builder/writer.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/writer.ts#L107">lib/builder/writer.ts:107</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -312,7 +312,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/writer.ts#L48">lib/builder/writer.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/writer.ts#L30">lib/builder/writer.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -334,16 +334,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/writer.ts#L100">lib/builder/writer.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/writer.ts#L46">lib/builder/writer.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>返回当前生成的代码。</p>
+									<p>返回当前写入的文本内容。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>返回完整的代码。</p>
+							<p>返回文本内容。</p>
 						</li>
 					</ul>
 				</section>
@@ -357,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/writer.ts#L53">lib/builder/writer.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/writer.ts#L35">lib/builder/writer.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -373,18 +373,18 @@
 					<a name="write" class="tsd-anchor"></a>
 					<h3>write</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, startIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, endIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sourcePath<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, sourceLine<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sourceColumn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sourceMap<span class="tsd-signature-symbol">?: </span><a href="../globals.html#sourcemapdata" class="tsd-signature-type">SourceMapData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, startIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, endIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sourcePath<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, sourceMap<span class="tsd-signature-symbol">?: </span><a href="sourcemapbuilder.html" class="tsd-signature-type">SourceMapBuilder</a>, sourceLine<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sourceColumn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/writer.ts#L74">lib/builder/writer.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/writer.ts#L59">lib/builder/writer.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>底层实现写入一段文本。</p>
+									<p>写入一段文本。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -398,19 +398,27 @@
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> startIndex: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>要写入的内容的开始索引。</p>
+										<p>要写入的内容的开始索引(从 0 开始)。</p>
 									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> endIndex: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>要写入的内容的结束索引。</p>
+										<p>要写入的内容的结束索引(从 0 开始)。</p>
 									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sourcePath: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>内容的源文件路径。</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sourceMap: <a href="sourcemapbuilder.html" class="tsd-signature-type">SourceMapBuilder</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>源文件中的源映射。如果存在将自动合并到当前源映射。</p>
+										</div>
 									</div>
 								</li>
 								<li>
@@ -423,12 +431,6 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sourceColumn: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>内容在源文件中的列号(从 0 开始)。</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sourceMap: <a href="../globals.html#sourcemapdata" class="tsd-signature-type">SourceMapData</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>源文件中的源映射。如果存在将自动合并到当前源映射。</p>
 									</div>
 								</li>
 							</ul>
@@ -446,7 +448,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/writer.ts#L91">lib/builder/writer.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/writer.ts#L100">lib/builder/writer.ts:100</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -462,13 +464,13 @@
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> startIndex: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>要写入的内容的开始索引。</p>
+										<p>要写入的内容的开始索引(从 0 开始)。</p>
 									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> endIndex: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>要写入的内容的结束索引。</p>
+										<p>要写入的内容的结束索引(从 0 开始)。</p>
 									</div>
 								</li>
 							</ul>

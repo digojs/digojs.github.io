@@ -77,18 +77,6 @@
 					<li class="current tsd-kind-class">
 						<a href="filelist.html" class="tsd-kind-icon">File<wbr>List</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="filelist.html#next" class="tsd-kind-icon">next</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="filelist.html#prev" class="tsd-kind-icon">prev</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="filelist.html#processor" class="tsd-kind-icon">processor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="filelist.html#processoroptions" class="tsd-kind-icon">processor<wbr>Options</a>
-							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="filelist.html#result" class="tsd-kind-icon">result</a>
 							</li>
@@ -99,10 +87,16 @@
 								<a href="filelist.html#add" class="tsd-kind-icon">add</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="filelist.html#clone" class="tsd-kind-icon">clone</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="filelist.html#delete" class="tsd-kind-icon">delete</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="filelist.html#dest" class="tsd-kind-icon">dest</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="filelist.html#done" class="tsd-kind-icon">done</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="filelist.html#end" class="tsd-kind-icon">end</a>
@@ -149,15 +143,6 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="filelist.html#next" class="tsd-kind-icon">next</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="filelist.html#prev" class="tsd-kind-icon">prev</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="filelist.html#processor" class="tsd-kind-icon">processor</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="filelist.html#processoroptions" class="tsd-kind-icon">processor<wbr>Options</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="filelist.html#result" class="tsd-kind-icon">result</a></li>
@@ -168,77 +153,16 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="filelist.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="filelist.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="filelist.html#delete" class="tsd-kind-icon">delete</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="filelist.html#dest" class="tsd-kind-icon">dest</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filelist.html#done" class="tsd-kind-icon">done</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="filelist.html#end" class="tsd-kind-icon">end</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="filelist.html#pipe" class="tsd-kind-icon">pipe</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="filelist.html#src" class="tsd-kind-icon">src</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="filelist.html#then" class="tsd-kind-icon">then</a></li>
 							</ul>
 						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="next" class="tsd-anchor"></a>
-					<h3>next</h3>
-					<div class="tsd-signature tsd-kind-icon">next<span class="tsd-signature-symbol">:</span> <a href="filelist.html" class="tsd-signature-type">FileList</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L25">lib/builder/fileList.ts:25</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>获取下一级列表。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="prev" class="tsd-anchor"></a>
-					<h3>prev</h3>
-					<div class="tsd-signature tsd-kind-icon">prev<span class="tsd-signature-symbol">:</span> <a href="filelist.html" class="tsd-signature-type">FileList</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L20">lib/builder/fileList.ts:20</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>获取上一级列表。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="processor" class="tsd-anchor"></a>
-					<h3>processor</h3>
-					<div class="tsd-signature tsd-kind-icon">processor<span class="tsd-signature-symbol">:</span> <a href="../interfaces/processor.html" class="tsd-signature-type">Processor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;emptyObject</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L73">lib/builder/fileList.ts:73</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>获取当前列表的处理器。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="processoroptions" class="tsd-anchor"></a>
-					<h3>processor<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">processor<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;emptyObject</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L78">lib/builder/fileList.ts:78</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>获取当前列表的处理器选项。</p>
-						</div>
 					</div>
 				</section>
 			</section>
@@ -254,7 +178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L41">lib/builder/fileList.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/fileList.ts#L37">lib/builder/fileList.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -276,7 +200,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L30">lib/builder/fileList.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/fileList.ts#L26">lib/builder/fileList.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -301,7 +225,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L85">lib/builder/fileList.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/fileList.ts#L81">lib/builder/fileList.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -329,6 +253,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clone" class="tsd-anchor"></a>
+					<h3>clone</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filelist.html" class="tsd-signature-type">FileList</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/fileList.ts#L368">lib/builder/fileList.ts:368</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>创建当前列表所有文件的副本。</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="filelist.html" class="tsd-signature-type">FileList</a></h4>
+							<p>返回用于接收处理后文件的文件列表。</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="delete" class="tsd-anchor"></a>
 					<h3>delete</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -338,7 +285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L348">lib/builder/fileList.ts:348</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/fileList.ts#L356">lib/builder/fileList.ts:356</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -349,9 +296,9 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> deleteDir: <span class="tsd-signature-type">boolean</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> deleteDir: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>指示是否删除空的父文件夹。默认为 true。</p>
+										<p>指示是否删除空的父文件夹。</p>
 									</div>
 								</li>
 							</ul>
@@ -364,13 +311,13 @@
 					<a name="dest" class="tsd-anchor"></a>
 					<h3>dest</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">dest<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filelist.html" class="tsd-signature-type">FileList</a></li>
+						<li class="tsd-signature tsd-kind-icon">dest<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filelist.html" class="tsd-signature-type">FileList</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L330">lib/builder/fileList.ts:330</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/fileList.ts#L343">lib/builder/fileList.ts:343</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -381,7 +328,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dir: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dir: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>要保存的目标文件文件夹。如果为空则保存到原文件夹。</p>
 									</div>
@@ -389,6 +336,28 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="filelist.html" class="tsd-signature-type">FileList</a></h4>
 							<p>返回用于接收处理后文件的文件列表。</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="done" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> done</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">done<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/fileList.ts#L246">lib/builder/fileList.ts:246</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>当作为顶级列表时表示所有子列表执行完成后的回调。</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -402,7 +371,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L103">lib/builder/fileList.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/fileList.ts#L99">lib/builder/fileList.ts:99</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -424,7 +393,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L269">lib/builder/fileList.ts:269</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/fileList.ts#L275">lib/builder/fileList.ts:275</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -468,13 +437,13 @@
 					<a name="src" class="tsd-anchor"></a>
 					<h3>src</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">src<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>patterns<span class="tsd-signature-symbol">: </span><a href="../globals.html#pattern" class="tsd-signature-type">Pattern</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filelist.html" class="tsd-signature-type">FileList</a></li>
+						<li class="tsd-signature tsd-kind-icon">src<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>patterns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Pattern[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filelist.html" class="tsd-signature-type">FileList</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L317">lib/builder/fileList.ts:317</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/fileList.ts#L330">lib/builder/fileList.ts:330</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -485,7 +454,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>patterns: <a href="../globals.html#pattern" class="tsd-signature-type">Pattern</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>patterns: <span class="tsd-signature-type">Pattern[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>用于筛选文件的通配符、正则表达式、函数或以上模式组合的数组。</p>
 									</div>
@@ -506,7 +475,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/digojs/digo/blob/9e030c5/lib/builder/fileList.ts#L301">lib/builder/fileList.ts:301</a></li>
+									<li>Defined in <a href="https://github.com/digojs/digo/blob/79d3967/lib/builder/fileList.ts#L309">lib/builder/fileList.ts:309</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
